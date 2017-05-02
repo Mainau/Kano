@@ -12,3 +12,43 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.htwg-darkblue{
+    background-color: #344050 !important;
+}
+
+.htwg-lightblue{
+    background-color: #d3dde2 !important;
+}
+
+.htwg-green{
+    background-color: #009b91 !important;
+}
+
+.htwg-black{
+    background-color: #3c3c3c !important;
+}
+
+.htwg-grey{
+    background-color: #787878 !important;
+}
+
+.htwg-darkblue-text{
+    color: #344050 !important;
+}
+
+.htwg-lightblue-text{
+    color: #d3dde2 !important;
+}
+
+.htwg-green-text{
+    color: #009b91 !important;
+}
+
+.htwg-black-text{
+    color: #3c3c3c !important;
+}
+
+.htwg-grey-text{
+    color: #787878 !important;
+}
