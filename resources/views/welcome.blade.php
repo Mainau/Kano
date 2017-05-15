@@ -1,5 +1,10 @@
-@extends('layout')
-
-@section('content')
-<h1>hallo</h1>
-@stop
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        welcome
+    </body>
+</html>
