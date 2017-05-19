@@ -12,9 +12,14 @@ class PagesController extends Controller
         return view('pages.home');
     }
 
-    public function about(){
-        $cities = ["Hamburg", "Konstanz", "Soest"];
-        return view('pages.about', compact('cities')) ;
+    public function eingabe(){
+
+        return view('pages.eingabe') ;
+    }
+
+    public function pruefen(){
+
+        return view('pages.pruefen') ;
     }
 
 }
