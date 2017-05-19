@@ -22,14 +22,14 @@
       </div>
       <div>
      <label type="text">
-       <input id="funktional" name="funktional">
+       <input id="funktional" name="funktional" placeholder="funktionale Anforderung eingeben...">
      </label>
    </div>
       <div class="row center-left">
         <h7 class="header col s12 light">Bitte geben Sie hier Ihre Anforderungen ein (dysfunktional)</h7>
       </div>
       <label type="text">
-        <input id="dysfunktional" name="dysfunktional">
+        <input id="dysfunktional" name="dysfunktional" placeholder="dysfunktionale Anforderung eingeben...">
       </label>
       <br><br>
     </div>

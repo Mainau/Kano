@@ -31,23 +31,7 @@
        <td>dysfunktAnforderung2</td>
      </tr>
    </table>
-
-      <!-- <div class="row center-left">
-        <h7 class="header col s12 light">Bitte geben Sie hier Ihre Anforderungen ein (funktional)</h7>
-      </div>
-      <div>
-     <label type="text">
-       <input id="funktional" name="funktional">
-     </label>
-   </div>
-      <div class="row center-left">
-        <h7 class="header col s12 light">Bitte geben Sie hier Ihre Anforderungen ein (dysfunktional)</h7>
-      </div>
-      <label type="text">
-        <input id="dysfunktional" name="dysfunktional">
-      </label>
-      <br><br>
-    </div> -->
+          <br><br>
     <div class="buttons" >
     <div class="row center-right">
       <a href="eingabe" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>

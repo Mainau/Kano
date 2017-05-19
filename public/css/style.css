@@ -52,3 +52,9 @@
 .htwg-grey-text{
     color: #787878 !important;
 }
+
+table{
+  border-color: #000000;
+  border-width: medium;
+  background-color: #FFFFFF;
+}
