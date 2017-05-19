@@ -16,3 +16,7 @@ Route::get('/', 'PagesController@home');
 Route::get('/eingabe','PagesController@eingabe');
 
 Route::get('/pruefen','PagesController@pruefen');
+
+Route::get('/freigeben','PagesController@freigeben');
+
+Route::get('/ergebnis','PagesController@ergebnis');

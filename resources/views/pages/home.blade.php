@@ -23,7 +23,7 @@
         <h5 class="header col s12 light">Tool zur Anforderungserhebung und Priorisierung nach Kano</h5>
       </div>
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light htwg-darkblue">Beginnen</a>
+        <a href="eingabe" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Beginnen</a>
       </div>
       <br><br>
 

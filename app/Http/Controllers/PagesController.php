@@ -22,4 +22,14 @@ class PagesController extends Controller
         return view('pages.pruefen') ;
     }
 
+    public function freigeben(){
+
+        return view('pages.freigeben') ;
+    }
+
+    public function ergebnis(){
+
+        return view('pages.ergebnis') ;
+    }
+
 }

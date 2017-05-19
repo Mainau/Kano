@@ -3,11 +3,11 @@
 @section('content')
 <body class="htwg-lightblue">
   <nav class="htwg-darkblue" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Kano</a></li>
+        <!-- <li><a href="#">Kano</a></li> -->
       </ul>
-
+          <img src="Kano\KANO-LOGO.jpg" width="80px" height="80px">
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -15,12 +15,8 @@
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
-    <div class="right">
-      <a href="http://materializecss.com/getting-started.html" id="weiter-Button" class="btn-small waves-effect waves-light htwg-darkblue">--></a>
-    </div>
     <div class="container">
-      <br><br>
-      <h3 class="header left htwg-darkblue-text">Anforderungserhebung</h3>
+      <h3 class="header left htwg-darkblue-text">Anforderungseingabe</h3>
       <div class="row center-left">
         <h7 class="header col s12 light">Bitte geben Sie hier Ihre Anforderungen ein (funktional)</h7>
       </div>
@@ -35,12 +31,15 @@
       <label type="text">
         <input id="dysfunktional" name="dysfunktional">
       </label>
-      <div class="row center-right">
-        <a href="pages.pruefen" id="download-button" class="btn-large waves-effect waves-light right htwg-darkblue">Zur Übersicht</a>
-      </div>
-
       <br><br>
-
     </div>
-
+    <div class="buttons" >
+    <div class="row center-right">
+      <a href="eingabe" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
+    </div>
+    <div class="row center-right">
+      <a href="pruefen" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Übersicht</a>
+    </div>
+  </div>
+  <br><br>
   </div>
