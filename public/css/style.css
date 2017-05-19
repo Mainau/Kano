@@ -53,8 +53,17 @@
     color: #787878 !important;
 }
 
-table{
+.fortschritt{
+  border-style: none;
+}
+
+th{
+  text-align: center;
+}
+
+table, th, td {
   border-color: #000000;
-  border-width: medium;
+  border-style: solid;
+  border-width: thin;
   background-color: #FFFFFF;
 }

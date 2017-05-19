@@ -15,7 +15,18 @@
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
+    <div>
+      <table id="fortschritt">
+            <tr>
+             <th>Anforderungen eingeben</th>
+             <th>Anforderungen prüfen</th>
+             <th>Anforderungen freigeben</th>
+             <th>Ergebnis der Bewertung</th>
+           </tr>
+         </table>
+         </div>
     <div class="container">
+
       <h3 class="header left htwg-darkblue-text">Anforderungsprüfung</h3>
 <table id="tabelle">
       <tr>

@@ -11,6 +11,8 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
+
+
 @yield('content')
 
   <footer class="page-footer htwg-darkblue">
