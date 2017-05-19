@@ -4,7 +4,7 @@
 @section('content')
 <body class="htwg-lightblue">
   <nav class="htwg-darkblue" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Kano</a></li>
       </ul>
@@ -13,6 +13,9 @@
         <li><a href="#">Navbar Link</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div> -->
+    <div class="nav-wrapper container">
+        <img src="KANO-LOGO.jpg"  width="80px" height="80px"/>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">

@@ -53,17 +53,51 @@
     color: #787878 !important;
 }
 
-.fortschritt{
-  border-style: none;
-}
-
 th{
   text-align: center;
 }
 
-table, th, td {
+table, td{
   border-color: #000000;
   border-style: solid;
   border-width: thin;
   background-color: #FFFFFF;
+}
+
+.fortschritt{
+  border-style: none;
+  border-color: #FFFFFF;
+}
+
+/* allgemeines */
+input.hackbox {
+  display:none;
+}
+
+/* default-Zustand */
+span.schabloneSpan {
+  display:none;
+}
+
+label.schablone {
+  color:#000000;
+}
+
+label.schablone::before {
+  color:#000000;
+}
+
+/* bei gesetztem Haken */
+input.schablone:checked ~ span.schabloneSpan {
+  display:inline;
+}
+
+input.schablone:checked ~ label.schablone::before {
+  color:#0091D2;
+}
+
+#add-button{
+  color: #FFFFFF;
+  border-style: none;
+  border-radius: 2px;
 }
