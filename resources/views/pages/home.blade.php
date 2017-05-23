@@ -50,7 +50,8 @@
             <h2 class="center htwg-green-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Einfache Durchführung der Umfrage</h5>
 
-            <p class="light">Duis eget enim nibh. Vivamus pretium nisi libero, nec sodales nisl vehicula sed. Nam tempor semper pharetra. Suspendisse volutpat dapibus diam eu maximus. Aenean blandit orci accumsan felis elementum mollis.</p>
+            <p class="light">Nach dem Erhalt des Umfrage-Links können ihre Umfrage-Teilnehmer diese  sofort online bei KANO ausfüllen oder diese zu einem späteren Zeitpunkt online bei KANO aufrufen.   KANO unterstützt die Teilnehmer beim vollständigen Ausfüllen Ihrer Umfrage und erkennt Unvollständigkeiten direkt.
+</p>
           </div>
         </div>
 
@@ -59,7 +60,7 @@
             <h2 class="center htwg-green-text"><i class="material-icons">settings</i></h2>
             <h5 class="center">Klare Übersicht der Ergebnisse</h5>
 
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta feugiat arcu eu placerat. Sed tincidunt molestie justo sed faucibus. Mauris volutpat neque non velit eleifend, eget sodales sapien porta. Duis eget enim nibh. Vivamus pretium nisi libero, nec sodales nisl vehicula sed. Nam tempor semper pharetra.</p>
+            <p class="light">KANO informiert Sie über den Abschluss aller ihrer Befragungen. Sie erhalten darauf automatisch die Auswertung Ihrer Umfrage. Die Ergebnisse können Sie direkt exportieren oder jederzeit online abrufen.</p>
           </div>
         </div>
       </div>
