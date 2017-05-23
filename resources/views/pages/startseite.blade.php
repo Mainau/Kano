@@ -37,7 +37,7 @@
             <br></br>
               <br></br>
               <div class="row center-right">
-                <a href="eingabe" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Start</a>
+                <a href="befragung" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Start</a>
               </div>
     </div>
   </div>

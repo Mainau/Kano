@@ -63,10 +63,10 @@
       <br></br>
 
       <div class="row center-right">
-        <a href="eingabe" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
+        <a href="fertig" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
       </div>
       <br></br>
-      
+
 
     </div>
   </div>
