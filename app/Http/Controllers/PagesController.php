@@ -31,5 +31,13 @@ class PagesController extends Controller
 
         return view('pages.ergebnis') ;
     }
-
+    public function startseite(){
+      return view ('pages.startseite');
+    }
+    public function fertig(){
+      return view ('pages.fertig');
+    }
+    public function befragung(){
+      return view ('pages.befragung');
+    }
 }
