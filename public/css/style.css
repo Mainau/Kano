@@ -101,3 +101,10 @@ input.schablone:checked ~ label.schablone::before {
   border-style: none;
   border-radius: 2px;
 }
+
+#radioTable,
+#radioTable tr,
+#radioTable tr td {
+  background-color: #d3dde2;
+  border-style: none;
+}

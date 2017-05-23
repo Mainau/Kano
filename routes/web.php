@@ -20,3 +20,9 @@ Route::get('/pruefen','PagesController@pruefen');
 Route::get('/freigeben','PagesController@freigeben');
 
 Route::get('/ergebnis','PagesController@ergebnis');
+
+Route::get('/startseite','PagesController@startseite');
+
+Route::get('/fertig','PagesController@fertig');
+
+Route::get('/befragung', 'PagesController@befragung');
