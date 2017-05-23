@@ -13,11 +13,9 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div> -->
     <div class="nav-wrapper container">
-<<<<<<< HEAD
+
       <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/> -->
-=======
-        <img src="KANO-LOGO.jpg"  width="80px" height="80px"/>
->>>>>>> janina
+
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
