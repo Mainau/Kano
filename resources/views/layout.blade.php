@@ -11,16 +11,16 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
-
-
 @yield('content')
 
   <footer class="page-footer htwg-darkblue">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
+
           <h5 class="white-text">Teamprojekt Gesundheitsinformatik</h5>
           <p class="grey-text text-lighten-4">Diese Website ist im Kontext der Veranstaltung "Teamprojekt" entstanden.<br> Teammitglieder: Janina Beck, James Friesen, Katharina Lohr, Felix Schlicht, Sarah Schucker </p>
+
 
 
         </div>
