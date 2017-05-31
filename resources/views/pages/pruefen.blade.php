@@ -58,6 +58,6 @@
       <a href="freigeben" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Freigabe</a>
     </div>
   </div>
-  <br><br>
+
   </div>
   </div>

@@ -104,7 +104,7 @@ input.schablone:checked ~ label.schablone::before {
   border-style: none;
   border-radius: 2px;
 }
-<<<<<<< HEAD
+
 
 #radioTable,
 #radioTable tr,
@@ -112,5 +112,31 @@ input.schablone:checked ~ label.schablone::before {
   background-color: #d3dde2;
   border-style: none;
 }
-=======
->>>>>>> janina
+
+#diagramm{
+  margin-left: 10px;
+  width: 350px;
+}
+
+#ergebnisTabelle{
+  margin-right: 10px;
+  width: 350px;
+}
+
+#exportButton{
+  margin-right: 10px;
+}
+
+#trennLinie{
+  stroke-dasharray: 5;
+  stroke: black;
+}
+
+/*style="stroke:black;stroke-width:4"*/
+
+/*#footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}*/
