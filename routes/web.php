@@ -26,3 +26,5 @@ Route::get('/startseite','PagesController@startseite');
 Route::get('/fertig','PagesController@fertig');
 
 Route::get('/befragung', 'PagesController@befragung');
+
+Route::get('/anmeldung', 'PagesController@anmeldung');

@@ -33,7 +33,7 @@
           <br>
         </div>
       <div class="row center-left">
-      <h3 class="header left htwg-darkblue-text">Anforderungseingabe</h3>
+      <h3 class="header left htwg-darkblue-text" style="margin-left:10px">Anforderungseingabe</h3>
     </div>
     <div class="schabloneAnzeigen">
       <input type="checkbox" class="hackbox schablone" id="schabloneID">
@@ -42,6 +42,13 @@
             <span class="schabloneSpan">Hier könnte Ihre Schablone stehen! :)<br></span>
       <br><br>
     </div>
+    <div class="row center-left">
+      <h7 class="header col s12 light">Bitte benennen Sie hier Ihre Anforderungen ein (Stichwort)</h7>
+   <label type="text">
+     <input id="stichwort" name="stichwort" placeholder="Stichwort eingeben...">
+   </label>
+ </div>
+
       <div class="row center-left">
         <h7 class="header col s12 light">Bitte geben Sie hier Ihre Anforderungen ein (funktional)</h7>
       </div>
@@ -50,13 +57,14 @@
        <input id="funktional" name="funktional" placeholder="funktionale Anforderung eingeben...">
      </label>
    </div>
+
       <div class="row center-left">
         <h7 class="header col s12 light">Bitte geben Sie hier Ihre Anforderungen ein (dysfunktional)</h7>
       </div>
       <label type="text">
         <input id="dysfunktional" name="dysfunktional" placeholder="dysfunktionale Anforderung eingeben...">
       </label>
-        <br><br>
+
       <div class="row center-right" >
       <div class="row center-right">
         <a href="eingabe" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>

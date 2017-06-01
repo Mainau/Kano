@@ -40,4 +40,8 @@ class PagesController extends Controller
     public function befragung(){
       return view ('pages.befragung');
     }
+
+    public function anmeldung(){
+      return view ('pages.anmeldung');
+    }
 }

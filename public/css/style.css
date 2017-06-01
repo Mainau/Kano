@@ -66,10 +66,7 @@ table, td{
 
 .fortschritt{
   border-style: none;
-<<<<<<< HEAD
   border-color: #FFFFFF;
-=======
->>>>>>> janina
 }
 
 /* allgemeines */
@@ -132,7 +129,14 @@ input.schablone:checked ~ label.schablone::before {
   stroke: black;
 }
 
-/*style="stroke:black;stroke-width:4"*/
+input::-webkit-input-placeholder {
+color: #808080;
+}
+
+#stichwort{
+  margin-left: 10px;
+  width: 365px;
+}
 
 /*#footer{
   position: relative;
