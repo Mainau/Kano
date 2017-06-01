@@ -40,14 +40,18 @@
        <th><b>funktionale Anforderung</b></th>
        <th><b>dysfunktionale Anforderung</b></th>
      </tr>
-     <tr>
+
+      @foreach ($anforderungen as $anforderung)
+        @include ('anforderungen.anforderung')
+      @endforeach
+     <!-- <tr>
        <td>funktAnforderung1</td>
        <td>dysfunktAnforderung1</td>
      </tr>
      <tr>
        <td>funktAnforderung2</td>
        <td>dysfunktAnforderung2</td>
-     </tr>
+     </tr> -->
    </table>
           <br><br>
     <div class="buttons" >
