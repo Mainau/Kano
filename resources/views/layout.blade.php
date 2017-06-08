@@ -19,7 +19,7 @@
         <div class="col l6 s12">
 
             @if (Auth::check())
-            <h7 class="grey-text text-lighten-4"> logged in as {{Auth::user()->email}}</h7><br><br>
+            <h7 class="grey-text text-lighten-4"> eingeloggt als {{Auth::user()->email}}</h7><br><br>
             @endif
           <h7 class="grey-text text-lighten-4">Teamprojekt Gesundheitsinformatik</h7>
           <p class="grey-text text-lighten-4">Teammitglieder:

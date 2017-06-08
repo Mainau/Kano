@@ -31,7 +31,7 @@
         </div>
         <br></br>
               <br></br>
-      <h5 style="text-align:center">Vielen Dank für die Beantwortung der Fragen!!! </h5>
+      <h5 style="text-align:center">Vielen Dank für die Beantwortung der Fragen </h5>
       <br></br>
         <br></br>
               <br></br>

@@ -42,10 +42,14 @@
             <span class="schabloneSpan">Hier könnte Ihre Schablone stehen! :)<br></span>
       <br><br>
     </div>
+
+    <form method="POST" action="/createrequirement">
+        {{csrf_field()}}
+
     <div class="row center-left">
       <h7 class="header col s12 light">Bitte benennen Sie hier Ihre Anforderungen ein (Stichwort)</h7>
    <label type="text">
-     <input id="stichwort" name="stichwort" placeholder="Stichwort eingeben...">
+     <input id="stichwort" name="keyword" placeholder="Stichwort eingeben...">
    </label>
  </div>
 
@@ -54,7 +58,7 @@
       </div>
       <div>
      <label type="text">
-       <input id="funktional" name="funktional" placeholder="funktionale Anforderung eingeben...">
+       <input id="funktional" name="functionalphrase" placeholder="funktionale Anforderung eingeben...">
      </label>
    </div>
 
@@ -62,16 +66,20 @@
         <h7 class="header col s12 light">Bitte geben Sie hier Ihre Anforderungen ein (dysfunktional)</h7>
       </div>
       <label type="text">
-        <input id="dysfunktional" name="dysfunktional" placeholder="dysfunktionale Anforderung eingeben...">
+        <input id="dysfunktional" name="dysfunctionalphrase" placeholder="dysfunktionale Anforderung eingeben...">
       </label>
 
       <div class="row center-right" >
       <div class="row center-right">
-        <a href="eingabe" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
+        <input value="Speichern" type="submit" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
       </div>
+
+         </form>
       <div class="row center-right">
-        <a href="pruefen" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Übersicht</a>
+        <a href="pruefen" type="submit" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Übersicht</a>
       </div>
     </div>
+
+
     </div>
   </div>

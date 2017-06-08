@@ -13,9 +13,10 @@ class CreateRequirementsTable extends Migration
      */
     public function up()
     {
-        Schema::create('requirement', function (Blueprint $table) {
+        Schema::create('requirements', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('survey_id');
+            $table->integer('survey_id')->default(1);
+            $table->integer('user_id');
             $table->string('keyword');
             $table->string('functionalphrase');
             $table->string('dysfunctionalphrase');
@@ -30,6 +31,6 @@ class CreateRequirementsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('requirement');
+        Schema::dropIfExists('requirements');
     }
 }

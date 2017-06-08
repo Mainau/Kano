@@ -16,7 +16,11 @@
     </div>
     <div class="nav-wrapper container">
       <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/>-->
+      @if (Auth::check())
+          <a href="logout">logout</a>
+      @endif
     </div>
+
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
@@ -26,7 +30,11 @@
         <h5 class="header col s12 light">Tool zur Anforderungserhebung und Priorisierung nach Kano</h5>
       </div>
       <div class="row center">
-        <a href="anmeldung" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Beginnen</a>
+          @if (Auth::check())
+          <a href="eingabe" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Beginnen</a>
+          @else
+          <a href="anmeldung" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Anmelden</a>
+          @endif
       </div>
       <br><br>
 

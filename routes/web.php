@@ -40,3 +40,5 @@ Route::get('/login', 'Auth\LoginController@create');
 Route::post('/login', 'Auth\LoginController@store');
 
 Route::get('/logout', 'Auth\LoginController@destroy');
+
+Route::post('/createrequirement', 'RequirementsController@store');
