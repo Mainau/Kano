@@ -60,12 +60,38 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return User
      */
-    protected function create(array $data)
+    /*protected function create(array $data)
     {
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }*/
+
+    public function create()
+    {
+        return view('register');
+    }
+
+    public function store()
+    {
+        //validate
+        $this->validate(request(),[
+            'email' => 'required|unique:users|email',
+            'password' => 'required|confirmed'
+        ]);
+
+        //create and save the user
+        $user = User::create([
+            'email' => request('email'),
+            'password' => bcrypt(request('password'))
+        ]);
+
+        //sign in
+        auth()->login($user);
+
+        //redirect
+        return redirect()->home();
     }
 }

@@ -33,10 +33,10 @@
    <label>
      <input type="password" class="form-control" id="password" name="password" placeholder="Passwort eingeben..." required>
    </label>
+   @include('layouts.errors')
    <div class="row center-right">
      <input type="submit" value="Anmelden" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
    </div>
-   @include('layouts.errors')
  </div>
  </form>
 
@@ -57,11 +57,11 @@
 <label>
 <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Passwort erneut eingeben..." required>
 </label>
+@include('layouts.errors')
 <div class="row center-right">
   <input type="submit" value="Registrieren" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
 </div>
 </div>
-@include('layouts.errors')
 </form>
 
     </div>
