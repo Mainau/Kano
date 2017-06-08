@@ -23,35 +23,46 @@
       <div class="row center-left">
       <h3 class="header left htwg-darkblue-text">Anmeldung</h3>
     </div>
+
+    <form method="POST" action="/login">
+        {{csrf_field()}}
     <div>
-   <label type="text">
-     <input id="emailAnmeldung" name="emailAnmeldung" placeholder="E-Mail-Adresse eingeben...">
+   <label>
+     <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail-Adresse eingeben..." required>
    </label>
-   <label type="text">
-     <input id="passwort" name="passwort" placeholder="Passwort eingeben...">
+   <label>
+     <input type="password" class="form-control" id="password" name="password" placeholder="Passwort eingeben..." required>
    </label>
    <div class="row center-right">
-     <a href="eingabe" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Anmelden</a>
+     <input type="submit" value="Anmelden" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
    </div>
+   @include('layouts.errors')
  </div>
+ </form>
 
  <div class="row center-left">
  <h3 class="header left htwg-darkblue-text">Registrierung</h3>
 </div>
+
+<form method="POST" action="/register">
+    {{csrf_field()}}
+
 <div>
-<label type="text">
-<input id="emailRegistrierung" name="emailRegistrierung" placeholder="E-Mail-Adresse eingeben...">
+<label>
+<input type="email" class="form-control" id="email" name="email" placeholder="E-Mail-Adresse eingeben..." required>
 </label>
-<label type="text">
-<input id="passwort" name="passwort" placeholder="Passwort eingeben...">
+<label>
+<input type="password" class="form-control" id="password" name="password" placeholder="Passwort eingeben..." required>
 </label>
-<label type="text">
-<input id="passwort" name="passwort" placeholder="Passwort erneut eingeben...">
+<label>
+<input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Passwort erneut eingeben..." required>
 </label>
 <div class="row center-right">
-  <a href="eingabe" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Registrieren</a>
+  <input type="submit" value="Registrieren" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
 </div>
 </div>
+@include('layouts.errors')
+</form>
 
     </div>
   </div>
