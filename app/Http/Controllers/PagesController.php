@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Requirement;
 
 class PagesController extends Controller
 {
@@ -22,9 +21,7 @@ class PagesController extends Controller
 
     public function pruefen(){
 
-        $requirements = Requirement::where('survey_id', '=', 1)->get();
-
-        return view('pages.pruefen', compact('requirements')) ;
+        return view('pages.pruefen') ;
 
     }
 
