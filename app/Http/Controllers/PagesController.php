@@ -60,4 +60,13 @@ class PagesController extends Controller
       return view ('pages.anmeldung');
 
     }
+
+    public function kontakt(){
+      return view ('pages.kontakt');
+    }
+
+    public function impressum(){
+      return view ('pages.impressum');
+    }
+
 }

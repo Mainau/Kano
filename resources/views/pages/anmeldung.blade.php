@@ -21,7 +21,7 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <div class="row center-left">
-      <h3 class="header left htwg-darkblue-text">Anmeldung</h3>
+      <h3 class="header left htwg-darkblue-text">Login</h3>
     </div>
 
     <form method="POST" action="/login">
@@ -35,7 +35,7 @@
    </label>
    @include('layouts.errors')
    <div class="row center-right">
-     <input type="submit" value="Anmelden" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
+     <input type="submit" value="Login" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
    </div>
  </div>
  </form>
