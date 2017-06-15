@@ -42,3 +42,9 @@ Route::post('/login', 'Auth\LoginController@store');
 Route::get('/logout', 'Auth\LoginController@destroy');
 
 Route::post('/createrequirement', 'RequirementsController@store');
+
+Route::get('/kontakt','PagesController@kontakt');
+
+Route::get('/home','PagesController@home');
+
+Route::get('/impressum','PagesController@impressum');

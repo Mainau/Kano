@@ -12,6 +12,27 @@
 </head>
 
 @yield('content')
+<!--<header class="page-header htwg-darkblue" id ="header">-->
+  <nav class="htwg-darkblue" role="navigation">
+    <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Kano</a></li> -->
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+    <div class="nav-wrapper container">
+      <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/>-->
+      @if (Auth::check())
+          <a href="logout">logout</a>
+      @endif
+    </div>
+
+
+
 
   <footer class="page-footer htwg-darkblue" id="footer">
     <div class="container" >
@@ -35,14 +56,13 @@
           </ul>
         </div>-->
         <div class="col l3 s12 right">
-        <!--  <h5 class="white-text">Connect</h5>
+        <h5 class="white-text">KANO</h5>
           <ul>
-            <li><a class="white-text" href="#!">Kontakt</a></li>
-            <li><a class="white-text" href="#!">Impressum</a></li>
-            <li><a class="white-text" href="#!">FAQ</a></li>
-
-          </ul>
-          -->
+            <li><a class="white-text" href="home">Home</a></li>
+            <li><a class="white-text" href="kontakt">Kontakt</a></li>
+            <li><a class="white-text" href="impressum">Impressum</a></li>
+            <!--<li><a class="white-text" href="#!">FAQ</a></li>
+          </ul>-->
       </div>
       </div>
     </div>

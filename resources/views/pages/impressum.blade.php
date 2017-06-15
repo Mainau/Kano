@@ -3,7 +3,7 @@
 
 @section('content')
 <body class="htwg-lightblue">
-<  <nav class="htwg-darkblue" role="navigation">
+  <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Kano</a></li> -->
@@ -25,28 +25,54 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center htwg-darkblue-text">Kano-Umfrage</h1>
+      <h1 class="header center htwg-darkblue-text">Impressum</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Tool zur Anforderungserhebung und Priorisierung nach Kano</h5>
-      </div>
+        <ul class="header col s12 light">
+<h5>Kontakt</h5>
+<li>Name</li>
+<br>
+<li>Straße Hausnummer</li>
+<br>
+<li>78462 Konstanz</li>
+<br>
+<li>Telefonnummer</li>
+<li>+49 7531 000000</li>
+<br>
+<li>Email-Adresse</li>
+<li>Janina Beck (email), James Friese (email), Katharina Lohr (email), Felix Schlicht (email), Sarah Schucker (email)</li>
+<br>
+<h5>Gesamtverantwortung</h5>
+<li>Janina Beck, James Friesen, Katharina Lohr, Felix Schlicht, Sarah Schucker</li>
+<br>
+<h5>Urheberrechtshinweis</h5>
+<li>Texte, Bilder und Grafiken sowie das Layout wurden selbst erstellt. Diese sind durch das Urheberrecht gesch&uuml;tzt und d&uuml;rfen nicht kopiert, ver&auml;ndert oder auf anderen Web-Seiten genutzt werden.</li>
+<br>
+<h5>Externe Links</h5>
+<li>Die Verantwortung und Haftbarkeit der Inhalte beim Verweis auf externe Anbieter liegt bei dem jeweiligen Betreiber / Verfasser.</li>
+<br>
+<h5>DATENSCHUTZERKL&Auml;RUNG</h5>
+<p>Alle eingegeben Daten die zur Nutzung von KANO erforderlich sind, werden nicht an Dritte weitergegeben.</p>
+
+
+      <!--</div>
       <div class="row center">
           @if (Auth::check())
           <a href="eingabe" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Beginnen</a>
           @else
           <a href="anmeldung" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Anmelden</a>
           @endif
-      </div>
+      </div>-->
       <br><br>
 
     </div>
   </div>
 
 
-  <div class="container">
+  <!--<div class="container">
     <div class="section">
 
       <!--   Icon Section   -->
-      <div class="row">
+      <!--<div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center htwg-green-text"><i class="material-icons">flash_on</i></h2>
@@ -78,7 +104,7 @@
 
     </div>
     <br><br>
-
+-->
     <div class="section">
 
     </div>

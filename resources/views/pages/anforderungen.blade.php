@@ -1,4 +1,6 @@
+<div class="anforderung">
   <tr class="anforderungsReihe">
-    <td>{{$requirement->functionalphrase}}</td>
-    <td>{{$requirement->dysfunctionalphrase}}</td>
+    <td>{{$anforderung->body}}</td>
+    <td>{{$anforderung->body}}</td>
   </tr>
+</div>

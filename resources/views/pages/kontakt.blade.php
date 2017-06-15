@@ -3,7 +3,7 @@
 
 @section('content')
 <body class="htwg-lightblue">
-<  <nav class="htwg-darkblue" role="navigation">
+  <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Kano</a></li> -->
@@ -25,28 +25,39 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center htwg-darkblue-text">Kano-Umfrage</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Tool zur Anforderungserhebung und Priorisierung nach Kano</h5>
+      <h1 class="header center htwg-darkblue-text">Kontakt</h1>
+    <div class="row center">
+        <ul class="header col s12 light">
+          <li>Vorname Nachname</li>
+          <br>
+            <li>Straße Hausnummer</li>
+            <li>Postleitzahl Stadt</li>
+            <br>
+            <li>Telefonummer</li>
+            <li>0000000000000</li>
+            <br>
+            <li>Email-Adresse</li>
+            <li>kano@kano.de</li>
+          </ul>
       </div>
-      <div class="row center">
+        <!--<div class="row center">
           @if (Auth::check())
           <a href="eingabe" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Beginnen</a>
           @else
           <a href="anmeldung" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Anmelden</a>
           @endif
-      </div>
+      </div>-->
       <br><br>
 
     </div>
   </div>
 
 
-  <div class="container">
+<!--  <div class="container">
     <div class="section">
 
       <!--   Icon Section   -->
-      <div class="row">
+      <!--<div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center htwg-green-text"><i class="material-icons">flash_on</i></h2>
@@ -79,7 +90,7 @@
     </div>
     <br><br>
 
-    <div class="section">
+    <div class="section">-->
 
     </div>
   </div>
