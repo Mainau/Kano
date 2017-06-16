@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Requirement;
+use App\SurveyParticipant;
 
 class PagesController extends Controller
 {
@@ -62,5 +63,10 @@ class PagesController extends Controller
 
       return view ('pages.anmeldung');
 
+    }
+    public function sendEmails(){
+      $surveyParticipant = new SurveyParticipant;
+      $surveyParticipant->user_email = request()->input('emailAdresse');
+      $surveyParticipant->save();
     }
 }

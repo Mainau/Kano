@@ -18,6 +18,7 @@ Route::get('/eingabe','PagesController@eingabe');
 Route::get('/pruefen','PagesController@pruefen');
 
 Route::get('/freigeben','PagesController@freigeben');
+Route::post('/freigeben', 'PagesController@sendEmails');
 
 Route::get('/ergebnis','PagesController@ergebnis');
 

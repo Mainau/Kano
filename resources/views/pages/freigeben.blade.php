@@ -37,15 +37,15 @@
 
       <h3 class="header left htwg-darkblue-text">Anforderungen zur Bewertung freigeben</h3>
 
-      <div class="mailAdressen">
+      <form class="mailAdressen" method="POST" action="/freigeben">
+        {{csrf_field()}}
         <div class="row center-left">
           <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Mailadressen ein:</h7>
         </div>
         <div>
        <label type="text">
-         <input id="mailAdresse" name="mailAdresse" placeholder="beispiel@example.com">
+         <input id="email" type="email" class="form-control" name="emailAdresse" placeholder="beispiel@example.com" required>
        </label>
-
        <div class="row center-right">
          <button href="freigeben" id="add-button" class="btn-small waves-effect right htwg-darkblue" style="height: 50px; width: 50px;">+</button>
        </div>
@@ -56,9 +56,9 @@
       <a href="pruefen" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>
     </div>
     <div class="row center-right">
-      <a href="ergebnis" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Freigeben</a>
+      <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
     </div>
-  </div>
+  </form>
   <br><br>
   </div>
     </div>
