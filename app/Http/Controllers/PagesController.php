@@ -68,5 +68,6 @@ class PagesController extends Controller
       $surveyParticipant = new SurveyParticipant;
       $surveyParticipant->user_email = request()->input('emailAdresse');
       $surveyParticipant->save();
+      return view('pages.freigeben');
     }
 }

@@ -51,13 +51,17 @@
        </div>
 
           <br><br>
+          <div class="row center-right">
+            <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
+          </div>
     <div class="buttons" >
     <div class="row center-right">
       <a href="pruefen" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>
     </div>
     <div class="row center-right">
-      <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
+      <a href="ergebnis" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
     </div>
+
   </form>
   <br><br>
   </div>
