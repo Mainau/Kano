@@ -2,11 +2,13 @@
 
 namespace App;
 
-class Requirement extends Model
+use Illuminate\Database\Eloquent\Model;
+
+class Survey extends Model
 {
-    public function survey()
+    public function requirements()
     {
-        return $this->belongsTo(Survey::class);
+        return $this->hasMany(Requirement::class);
     }
 
     public function user()
@@ -18,6 +20,4 @@ class Requirement extends Model
     {
         return $this->hasMany(Reply::class);
     }
-
-
 }
