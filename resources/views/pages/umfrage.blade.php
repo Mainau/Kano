@@ -23,35 +23,17 @@
   <div class="section no-pad-bot" id="index-banner">
 
     <div class="container">
-      <div>
-        <table id="fortschritt">
-              <tr>
-               <th style="background-color: #009b91; color:#FFFFFF">Anforderungen eingeben</th>
-               <th style="background-color: #009b91; color:#FFFFFF">Anforderungen prüfen</th>
-               <th>Anforderungen freigeben</th>
-               <th>Ergebnis der Bewertung</th>
-             </tr>
-           </table>
-                    <br>
-           </div>
-      <h3 class="header left htwg-darkblue-text">Übersicht der eingegebenen Anforderungen</h3>
+
+      <h3 class="header left htwg-darkblue-text">Kano-Umfrage</h3>
 <table id="tabelle">
       <tr>
        <th><b>funktionale Anforderung</b></th>
        <th><b>dysfunktionale Anforderung</b></th>
      </tr>
 
-  
+
    </table>
-          <br><br>
-    <div class="buttons" >
-    <div class="row center-right">
-      <a href="eingabe" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>
-    </div>
-    <div class="row center-right">
-      <a href="freigeben" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Freigabe</a>
-    </div>
-  </div>
+    
 
   </div>
   </div>
