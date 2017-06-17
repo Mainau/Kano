@@ -37,6 +37,7 @@
 
       <h3 class="header left htwg-darkblue-text">Anforderungen zur Bewertung freigeben</h3>
 
+
       <form class="mailAdressen" method="POST" action="/freigeben">
         {{csrf_field()}}
         <div class="row center-left">
