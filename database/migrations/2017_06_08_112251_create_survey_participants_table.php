@@ -15,7 +15,7 @@ class CreateSurveyParticipantsTable extends Migration
     {
         Schema::create('survey_participants', function (Blueprint $table) {
             $table->increments('id');
-          //  $table->integer('survey_id')->defaul(1);
+            $table->integer('survey_id')->default(1);
             $table->string('user_email');
             $table->timestamps();
         });
