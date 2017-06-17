@@ -11,15 +11,17 @@ class SurveyInvitation extends Mailable
 {
     use Queueable, SerializesModels;
     public $name;
+    public $surveyID;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($name)
+    public function __construct($name, $surveyID)
     {
       $this->name=$name;
+      $this->surveyID=$surveyID;
         //
     }
 

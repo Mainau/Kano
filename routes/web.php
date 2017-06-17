@@ -20,6 +20,8 @@ Route::get('/pruefen','PagesController@pruefen');
 Route::get('/freigeben','PagesController@freigeben');
 Route::post('/freigeben', 'PagesController@sendEmails');
 
+Route::get('/umfrage/{id}', 'PagesController@umfrage');
+
 Route::get('/ergebnis','PagesController@ergebnis');
 
 Route::get('/startseite','PagesController@startseite');

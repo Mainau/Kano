@@ -66,14 +66,18 @@ class PagesController extends Controller
       return view ('pages.anmeldung');
 
     }
-    //Zum Testen wird Mailtrap.io verwendet. Alle gesendeten Emails werden an das dort
-    //angelegte Emailfach gesendet. Um auch bei euch diesen Dienst nutzen zu können müsst
+    //Zum Testen wird Mailtrap.io verwendet. Alle gesendeten Emails werden von dem dort
+    //angelegten Emailfach empfangen. Um auch bei euch diesen Dienst nutzen zu können, müsst
     //ihr einen entsprechenden Account anlegen und die Login-Daten in der .env hinterlegen
     public function sendEmails(Request $request, Mailer $mailer){
+      $surveyID=1;
       $surveyParticipant = new SurveyParticipant;
       $surveyParticipant->user_email = request()->input('emailAdresse');
       $surveyParticipant->save();
-      $mailer->to($request->input('emailAdresse'))->send(new SurveyInvitation(auth()->user()->$name));
+      $mailer->to($request->input('emailAdresse'))->send(new SurveyInvitation(auth()->user()->name, $surveyID));
       return redirect()->back();
+    }
+    public function umfrage($id){
+      return view ('pages.umfrage',['id'=>$id]);
     }
 }
