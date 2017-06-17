@@ -55,12 +55,7 @@ class PagesController extends Controller
 
     }
 
-    public function befragung(){
-
-      return view ('pages.befragung');
-
-    }
-
+  
     public function anmeldung(){
 
       return view ('pages.anmeldung');
@@ -77,7 +72,8 @@ class PagesController extends Controller
       $mailer->to($request->input('emailAdresse'))->send(new SurveyInvitation(auth()->user()->name, $surveyID));
       return redirect()->back();
     }
-    public function umfrage($id){
-      return view ('pages.umfrage',['id'=>$id]);
+    public function befragung($id){
+        $requirements = Requirement::where('survey_id', '=', $id)->get();
+      return view ('pages.befragung',['id'=>$id,'requirements'=>$requirements]);
     }
 }
