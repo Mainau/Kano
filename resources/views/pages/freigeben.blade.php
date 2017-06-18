@@ -43,8 +43,8 @@
         <div class="row center-left">
           <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Mailadressen ein:</h7>
         </div>
-  <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">Apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
-
+  <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
+<div id="errorMes"style="color:Red;visibility:hidden">Keine Email</div>
             <br><br>
           <div class="row center-right">
             <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">
@@ -66,23 +66,38 @@
       <script src="{{asset('js/materialize.js')}}"></script>
       <script src="{{asset('js/init.js')}}"></script>
 
-      <script>   $('.chips').material_chip();
+      <script>
+      var emails=[];
+      function validateEmail(email) {
+          var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(email);
+        }
+        $('.chips').on('chip.add', function(e, chip){
+
+          if(validateEmail(chip.tag)){
+              emails.push(chip.tag);
+          }
+          else{
+            $('.chip').last().remove();
+            $('#errorMes').css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 1000);
+        }});
+
+        $('.chips').on('chip.delete', function(e, chip){
+          for(var i = 0; i < emails.length; i++) {
+              if(emails[i] == chip.tag) {
+                emails.splice(i, 1);
+                break;
+              }
+            }
+        });
+
+        $('.chips').material_chip();
   $('.chips-initial').material_chip({});
   $('.chips-placeholder').material_chip({
-    placeholder: 'Enter a tag',
-    secondaryPlaceholder: '+Tag',
+    placeholder: 'Email eingeben',
+    secondaryPlaceholder: 'Email eingeben',
   });
-  $('.chips-autocomplete').material_chip({
-    autocompleteOptions: {
-      data: {
-        'Apple': null,
-        'Microsoft': null,
-        'Google': null
-      },
-      limit: Infinity,
-      minLength: 1
-    }
-  });
+
    $('.chips').on('chip.add', function(e, chip){
 
   });
