@@ -2,7 +2,7 @@
 @extends('layout')
 
 @section('content')
-<body class="htwg-lightblue">
+
   <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">

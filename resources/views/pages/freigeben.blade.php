@@ -2,7 +2,7 @@
 @extends('layout')
 
 @section('content')
-<body class="htwg-lightblue">
+
   <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
@@ -43,17 +43,16 @@
         <div class="row center-left">
           <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Mailadressen ein:</h7>
         </div>
-        <div>
-       <label type="text">
-         <input id="email" type="email" class="form-control" name="emailAdresse" placeholder="beispiel@example.com" required>
-       </label>
-       <div class="row center-right">
+  <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">Apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
+
+    <div class="row center-right">
          <button href="freigeben" id="add-button" class="btn-small waves-effect right htwg-darkblue" style="height: 50px; width: 50px;">+</button>
        </div>
 
+
           <br><br>
           <div class="row center-right">
-            <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
+            <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">
           </div>
     <div class="buttons" >
     <div class="row center-right">
@@ -68,4 +67,34 @@
   </div>
     </div>
       </div>
+
+      <script>   $('.chips').material_chip();
+  $('.chips-initial').material_chip({
+    data: [{
+      tag: 'Apple',
+    }, {
+      tag: 'Microsoft',
+    }, {
+      tag: 'Google',
+    }],
+  });
+  $('.chips-placeholder').material_chip({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+  });
+  $('.chips-autocomplete').material_chip({
+    autocompleteOptions: {
+      data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+   $('.chips').on('chip.add', function(e, chip){
+
+  });
+        </script>
         </div>
