@@ -39,7 +39,8 @@
       <input type="checkbox" class="hackbox schablone" id="schabloneID">
       <label class="schablone" for="schabloneID">Schablone zur Formulierung Ihrer Anforderungen</label>
       <br><br>
-            <span class="schabloneSpan">Hier könnte Ihre Schablone stehen! :)<br></span>
+            <span class="schabloneSpan">Hier könnte Ihre Schablone stehen! :)
+                <img src="/img/junjiitoendlessdream.png"><br></span>
       <br><br>
     </div>
 
