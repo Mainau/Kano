@@ -7,6 +7,7 @@ use App\Requirement;
 use App\SurveyParticipant;
 use Illuminate\Mail\Mailer;
 use App\Mail\SurveyInvitation;
+use App\Survey;
 
 class PagesController extends Controller
 {
@@ -72,8 +73,8 @@ class PagesController extends Controller
       $mailer->to($request->input('emailAdresse'))->send(new SurveyInvitation(auth()->user()->name, $surveyID));
       return redirect()->back();
     }
-    public function befragung($id){
-        $requirements = Requirement::where('survey_id', '=', $id)->get();
-      return view ('pages.befragung',['id'=>$id,'requirements'=>$requirements]);
+    public function befragung(Survey $survey){
+        $requirements = Requirement::where('survey_id', '=', $survey->id)->get();
+      return view ('pages.befragung', compact('survey'), compact('requirements'));
     }
 }
