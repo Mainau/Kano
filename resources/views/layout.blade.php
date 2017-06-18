@@ -12,10 +12,8 @@
 
 </head>
 <body class="htwg-lightblue">
-<!--  Scripts-->
- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+
+
 @yield('content')
 
   <footer class="page-footer htwg-darkblue" id="footer">
@@ -57,8 +55,6 @@
       </div>
     </div> -->
   </footer>
-
-
 
   </body>
 </html>

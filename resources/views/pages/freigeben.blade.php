@@ -45,12 +45,7 @@
         </div>
   <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">Apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
 
-    <div class="row center-right">
-         <button href="freigeben" id="add-button" class="btn-small waves-effect right htwg-darkblue" style="height: 50px; width: 50px;">+</button>
-       </div>
-
-
-          <br><br>
+            <br><br>
           <div class="row center-right">
             <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">
           </div>
@@ -67,17 +62,12 @@
   </div>
     </div>
       </div>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="{{asset('js/materialize.js')}}"></script>
+      <script src="{{asset('js/init.js')}}"></script>
 
       <script>   $('.chips').material_chip();
-  $('.chips-initial').material_chip({
-    data: [{
-      tag: 'Apple',
-    }, {
-      tag: 'Microsoft',
-    }, {
-      tag: 'Google',
-    }],
-  });
+  $('.chips-initial').material_chip({});
   $('.chips-placeholder').material_chip({
     placeholder: 'Enter a tag',
     secondaryPlaceholder: '+Tag',
@@ -97,4 +87,3 @@
 
   });
         </script>
-        </div>
