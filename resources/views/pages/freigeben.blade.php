@@ -38,7 +38,7 @@
       <h3 class="header left htwg-darkblue-text">Anforderungen zur Bewertung freigeben</h3>
 
 
-      <form class="mailAdressen" method="POST" action="/freigeben">
+      <form class="mailAdressen" id="mailAdressen" method="POST" action="/freigeben">
         {{csrf_field()}}
         <div class="row center-left">
           <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Mailadressen ein:</h7>
@@ -46,8 +46,9 @@
   <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
 <div id="errorMes"style="color:Red;visibility:hidden">Keine Email</div>
             <br><br>
+             <input type='hidden' id= 'hiddenField' name='id' value='' />
           <div class="row center-right">
-            <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">
+            <button onClick="sendEmails()" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">Senden</button>
           </div>
     <div class="buttons" >
     <div class="row center-right">
@@ -101,4 +102,9 @@
    $('.chips').on('chip.add', function(e, chip){
 
   });
+
+  function sendEmails(){
+    document.getElementById('hiddenField').value = emails.toString();
+    document.getElementById("mailAdressen").submit();
+  }
         </script>

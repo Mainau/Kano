@@ -91,12 +91,19 @@ class PagesController extends Controller
     //angelegten Emailfach empfangen. Um auch bei euch diesen Dienst nutzen zu können, müsst
     //ihr einen entsprechenden Account anlegen und die Login-Daten in der .env hinterlegen
     public function sendEmails(Request $request, Mailer $mailer){
-      $surveyID=1;
-      $surveyParticipant = new SurveyParticipant;
-      $surveyParticipant->user_email = request()->input('emailAdresse');
-      $surveyParticipant->save();
-      $mailer->to($request->input('emailAdresse'))->send(new SurveyInvitation(auth()->user()->name, $surveyID));
+       $surveyID=1;
+       $request=request();
+      $emails=explode(',',$request->input('id'));
+      for($i=0;$i<sizeOf($emails); $i++){
+        $surveyParticipant = new SurveyParticipant;
+        $surveyParticipant->user_email = $emails[$i];
+        $surveyParticipant->save();
+        $mailer->to($emails[$i])->send(new SurveyInvitation(auth()->user()->name, $surveyID));
+
+      }
       return redirect()->back();
+
+
     }
 
 
