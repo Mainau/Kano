@@ -104,7 +104,7 @@ class PagesController extends Controller
       $id = Auth::user()->id;
       $urveyID=DB::table('users')
         ->join('surveys', function ($join) {
-            $join->on('users.id', '=', 'surveys.owner_id')
+            $join->on('users.id', '=', 'surveys.user_id')
                  ->where('surveys.ownder_id', '=',$id );
         })
         ->select('surveys.id')
