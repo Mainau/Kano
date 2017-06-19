@@ -10,6 +10,8 @@ use App\SurveyParticipant;
 use Illuminate\Mail\Mailer;
 use App\Mail\SurveyInvitation;
 use Auth;
+use DB;
+use Illuminate\Http\RedirectResponse;
 
 class PagesController extends Controller
 {
@@ -104,15 +106,17 @@ class PagesController extends Controller
     //ihr einen entsprechenden Account anlegen und die Login-Daten in der .env hinterlegen
     public function sendEmails(Request $request, Mailer $mailer){
       $id = Auth::user()->id;
-      $urveyID=DB::table('users')
-        ->join('surveys', function ($join) {
+      $surveyID=DB::table('users')
+        ->join('surveys', function ($join) use($id){
             $join->on('users.id', '=', 'surveys.user_id')
-                 ->where('surveys.ownder_id', '=',$id );
+                 ->where('surveys.user_id', '=',$id );
         })
-        ->select('surveys.id')
-        >order_by('surveys.created_time', 'desc')->first();
-        //->get();
+        //->select('surveys.id')
+        ->latest('surveys.created_at')->first()->id;
+
+
        $request=request();
+    if($request->id!=null){
       $emails=explode(',',$request->input('id'));
       for($i=0;$i<sizeOf($emails); $i++){
         $surveyParticipant = new SurveyParticipant;
@@ -121,7 +125,11 @@ class PagesController extends Controller
         $mailer->to($emails[$i])->send(new SurveyInvitation(auth()->user()->name, $surveyID));
 
       }
-      return redirect()->back();
+    }else{
+
+      }
+
+      return redirect()->back()->withErrors(['/befragung/'.$surveyID]);
 
 
     }

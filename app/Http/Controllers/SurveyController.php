@@ -19,6 +19,7 @@ class SurveyController extends Controller
         auth()->user()->publish_survey(
             new Survey(request(['name', 'beschreibung']))
         );
+        
 
 
         return redirect('/eingabe/' . $survey->id );
