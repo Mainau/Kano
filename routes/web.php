@@ -47,4 +47,4 @@ Route::get('/logout', 'Auth\LoginController@destroy');
 Route::post('/createrequirement', 'RequirementsController@store');
 
 
-Route::post('/survey/view/{survey}/completed', 'ReplyController@store');
+Route::post('/befragung/{survey}/abgeschlossen', 'ReplyController@store');

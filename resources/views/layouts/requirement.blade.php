@@ -7,13 +7,11 @@
     <tr>
         <td>
             <p> Bitte bewerten Sie die Anforderungen</p>
-            <form action="">
                 <input type="radio" name="{{ $requirement->id }}[func_answer]" id="helpful"> Das würde mir sehr helfen </input><br/>
                 <input type="radio" name="{{ $requirement->id }}[func_answer]" id="basic"> Das ist eine grundlegende Anforderung für mich </input><br/>
                 <input type="radio" name="{{ $requirement->id }}[func_answer]" id="irrelevant"> Das würde mich nicht betreffen </input><br/>
                 <input type="radio" name="{{ $requirement->id }}[func_answer]" id="annoying"> Das wäre eine geringe Unannehmlichkeit für mich </input><br/>
                 <input type="radio" name="{{ $requirement->id }}[func_answer]" id="problematic"> Das wäre ein großes Problem für mich </input><br/>
-            </form>
         </td>
         <td>
             <p> Wie wichtig ist diese Anforderung für Sie?</p>
@@ -37,13 +35,11 @@
     <tr>
         <td>
             <p> Bitte bewerten Sie die Anforderungen</p>
-            <form action="">
                 <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="helpful"> Das würde mir sehr helfen </input><br/>
                 <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="basic"> Das ist eine grundlegende Anforderung für mich </input><br/>
                 <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="irrelevant"> Das würde mich nicht betreffen </input><br/>
                 <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="annoying"> Das wäre eine geringe Unannehmlichkeit für mich </input><br/>
                 <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="problematic"> Das wäre ein großes Problem für mich </input><br/>
-            </form>
         </td>
     </tr>
 </table>
