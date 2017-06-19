@@ -116,6 +116,7 @@ class PagesController extends Controller
 
 
        $request=request();
+      
     if($request->id!=null){
       $emails=explode(',',$request->input('id'));
       for($i=0;$i<sizeOf($emails); $i++){
@@ -123,15 +124,12 @@ class PagesController extends Controller
         $surveyParticipant->user_email = $emails[$i];
         $surveyParticipant->save();
         $mailer->to($emails[$i])->send(new SurveyInvitation(auth()->user()->name, $surveyID));
-
+          return redirect()->back()->withErrors(['/befragung/'.$surveyID]);
       }
     }else{
-
+      return redirect()->back();
+        //  return redirect()->back()->withErrors(['error']);
       }
-
-      return redirect()->back()->withErrors(['/befragung/'.$surveyID]);
-
-
     }
 
 

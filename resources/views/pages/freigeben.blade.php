@@ -41,17 +41,20 @@
       <form class="mailAdressen" id="mailAdressen" method="POST" action="/freigeben">
         {{csrf_field()}}
         <div class="row center-left">
-          <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Mailadressen ein:</h7>
+          <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Emailadressen ein:</h7>
         </div>
   <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
-
+<div id= 'errorMes' name='errorMes' style="visibility:hidden; color:red;">Keine Email!</div>
+ <input type='hidden' id= 'hiddenField' name='id' value='' />
 @if($errors->any())
-<a href="{{$errors->first()}}">{{$errors->first()}}</a>
+<h6>Der versendete Link:</h6>
+<a href="{{$errors->first()}}">127.0.0.1:8000{{$errors->first()}}</a>
 @endif
 
 
+
             <br><br>
-             <input type='hidden' id= 'hiddenField' name='id' value='' />
+
           <div class="row center-right">
             <button onClick="sendEmails()" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">Senden</button>
           </div>
