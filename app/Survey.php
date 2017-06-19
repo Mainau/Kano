@@ -17,7 +17,7 @@ class Survey extends Model
     }
 
     public function participants(){
-      return $this->hasMany(SurveryPartipant::class);
+      return $this->hasMany(SurveyParticipant::class);
     }
 
     public function replies()
