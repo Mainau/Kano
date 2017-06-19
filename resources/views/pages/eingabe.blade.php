@@ -39,7 +39,8 @@
       <input type="checkbox" class="hackbox schablone" id="schabloneID">
       <label class="schablone" for="schabloneID">Schablone zur Formulierung Ihrer Anforderungen</label>
       <br><br>
-            <span class="schabloneSpan">Hier könnte Ihre Schablone stehen! :)<br></span>
+            <span class="schabloneSpan">Hier könnte Ihre Schablone stehen! :)
+                <img src="/img/junjiitoendlessdream.png"><br></span>
       <br><br>
     </div>
 
@@ -71,7 +72,7 @@
 
       <div class="row center-right" >
       <div class="row center-right">
-        <input value="Speichern" type="submit" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
+        <input value="Speichern" type="submit" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">
       </div>
 
          </form>

@@ -2,7 +2,7 @@
 @extends('layout')
 
 @section('content')
-<body class="htwg-lightblue">
+
   <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
@@ -37,30 +37,68 @@
 
       <h3 class="header left htwg-darkblue-text">Anforderungen zur Bewertung freigeben</h3>
 
-      <div class="mailAdressen">
+
+      <form class="mailAdressen" method="POST" action="/freigeben">
+        {{csrf_field()}}
         <div class="row center-left">
           <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Mailadressen ein:</h7>
         </div>
-        <div>
-       <label type="text">
-         <input id="mailAdresse" name="mailAdresse" placeholder="beispiel@example.com">
-       </label>
-
-       <div class="row center-right">
-         <button href="freigeben" id="add-button" class="btn-small waves-effect right htwg-darkblue" style="height: 50px; width: 50px;">+</button>
-       </div>
-
-          <br><br>
+  <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
+<div id="errorMes"style="color:Red;visibility:hidden">Keine Email</div>
+            <br><br>
+          <div class="row center-right">
+            <input type="submit" value="Senden" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">
+          </div>
     <div class="buttons" >
     <div class="row center-right">
       <a href="pruefen" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>
     </div>
     <div class="row center-right">
-      <a href="ergebnis" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Freigeben</a>
+      <a href="ergebnis" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
     </div>
-  </div>
+
+  </form>
   <br><br>
   </div>
     </div>
       </div>
-        </div>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="{{asset('js/materialize.js')}}"></script>
+      <script src="{{asset('js/init.js')}}"></script>
+
+      <script>
+      var emails=[];
+      function validateEmail(email) {
+          var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(email);
+        }
+        $('.chips').on('chip.add', function(e, chip){
+
+          if(validateEmail(chip.tag)){
+              emails.push(chip.tag);
+          }
+          else{
+            $('.chip').last().remove();
+            $('#errorMes').css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 1000);
+        }});
+
+        $('.chips').on('chip.delete', function(e, chip){
+          for(var i = 0; i < emails.length; i++) {
+              if(emails[i] == chip.tag) {
+                emails.splice(i, 1);
+                break;
+              }
+            }
+        });
+
+        $('.chips').material_chip();
+  $('.chips-initial').material_chip({});
+  $('.chips-placeholder').material_chip({
+    placeholder: 'Email eingeben',
+    secondaryPlaceholder: 'Email eingeben',
+  });
+
+   $('.chips').on('chip.add', function(e, chip){
+
+  });
+        </script>

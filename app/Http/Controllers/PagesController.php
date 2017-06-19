@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Requirement;
+use App\SurveyParticipant;
+use Illuminate\Mail\Mailer;
+use App\Mail\SurveyInvitation;
+use App\Survey;
 
 class PagesController extends Controller
 {
@@ -49,24 +54,25 @@ class PagesController extends Controller
 
     }
 
-    public function befragung(){
-
-      return view ('pages.befragung');
-
-    }
-
+  
     public function anmeldung(){
 
       return view ('pages.anmeldung');
 
     }
-
-    public function kontakt(){
-      return view ('pages.kontakt');
+    //Zum Testen wird Mailtrap.io verwendet. Alle gesendeten Emails werden von dem dort
+    //angelegten Emailfach empfangen. Um auch bei euch diesen Dienst nutzen zu können, müsst
+    //ihr einen entsprechenden Account anlegen und die Login-Daten in der .env hinterlegen
+    public function sendEmails(Request $request, Mailer $mailer){
+      $surveyID=1;
+      $surveyParticipant = new SurveyParticipant;
+      $surveyParticipant->user_email = request()->input('emailAdresse');
+      $surveyParticipant->save();
+      $mailer->to($request->input('emailAdresse'))->send(new SurveyInvitation(auth()->user()->name, $surveyID));
+      return redirect()->back();
     }
-
-    public function impressum(){
-      return view ('pages.impressum');
+    public function befragung(Survey $survey){
+        $requirements = Requirement::where('survey_id', '=', $survey->id)->get();
+      return view ('pages.befragung', compact('survey'), compact('requirements'));
     }
-
 }

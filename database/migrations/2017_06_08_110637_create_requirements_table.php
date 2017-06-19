@@ -16,7 +16,7 @@ class CreateRequirementsTable extends Migration
         Schema::create('requirements', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('survey_id')->default(1);
-            $table->integer('user_id');
+            $table->integer('user_id'); //ja nötig
             $table->string('keyword');
             $table->string('functionalphrase');
             $table->string('dysfunctionalphrase');

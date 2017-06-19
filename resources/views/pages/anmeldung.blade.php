@@ -2,7 +2,7 @@
 @extends('layout')
 
 @section('content')
-<body class="htwg-lightblue">
+
   <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
@@ -35,7 +35,7 @@
    </label>
    @include('layouts.errors')
    <div class="row center-right">
-     <input type="submit" value="Login" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
+     <input type="submit" value="Anmelden" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">
    </div>
  </div>
  </form>
@@ -59,7 +59,7 @@
 </label>
 @include('layouts.errors')
 <div class="row center-right">
-  <input type="submit" value="Registrieren" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
+  <input type="submit" value="Registrieren" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">
 </div>
 </div>
 </form>
