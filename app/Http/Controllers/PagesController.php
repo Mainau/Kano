@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Survey;
 use App\Requirement;
 use App\SurveyParticipant;
 use Illuminate\Mail\Mailer;
 use App\Mail\SurveyInvitation;
-use App\Survey;
+
 
 class PagesController extends Controller
 {
@@ -74,6 +75,7 @@ class PagesController extends Controller
       return redirect()->back();
     }
     public function befragung(Survey $survey){
+
         $requirements = Requirement::where('survey_id', '=', $survey->id)->get();
       return view ('pages.befragung', compact('survey'), compact('requirements'));
     }
