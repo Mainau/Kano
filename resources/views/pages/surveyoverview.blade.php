@@ -39,7 +39,7 @@
       <input type="checkbox" class="hackbox schablone" id="schabloneID">
       <label class="schablone" for="schabloneID">Schablone und Tipps zur Formulierung Ihrer Anforderungen</label>
       <br><br>
-            <span class="schabloneSpan"><img src="/img/schablone.png" alt="Schablone zur Anforderungsformulierung"/><br></span>
+            
             <span class="schabloneSpan"><p> Quelle:Johner institut, Nutzungsanforderungen,URL:https://www.johner-institut.de/blog/tag/nutzungsanforderungen/(Stand:18.06.2017)</p></span>
 <br>
             <span class="schabloneSpan"><h5>Als Hilfestellung zum Formulieren von Nutzungsanforderungen empfehlen wir die Inhalte folgende Webseiten</h5>
@@ -63,7 +63,7 @@
             <a href="http://www.procontext.de/aktuelles/2010/02/was-ist-usability-wirklich.html">Procontext: Usability-Engineering</a>
             <br>
             <a href="http://www.procontext.de/aktuelles/2006/08/die-neue-din-en-iso-9241-110.html">Procontext: Usability-Normung</a></span>
-            
+
 
       <br><br>
     </div>
