@@ -44,7 +44,7 @@ class ReplyController extends Controller
             $replyArray[] = $newReply;
         };
 
-        return view ('pages.startseite');
-        // return redirect()->action('SurveyController@view_survey_answers', [$survey->id]);
+        return redirect('/befragung/' . $survey->id . '/uebersicht');
+
     }
 }

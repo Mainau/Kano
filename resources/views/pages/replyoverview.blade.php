@@ -16,6 +16,8 @@
         <td>{{ $item->keyword }}</td>
         @foreach ($item->replies as $reply)
           <td>{{ $reply->funcitonalscore }} <br/></td>
+          <td>{{ $reply->dysfunctionalscore }} <br/></td>
+          <td>{{ $reply->importance }} <br/></td>
         @endforeach
       </tr>
     @empty
