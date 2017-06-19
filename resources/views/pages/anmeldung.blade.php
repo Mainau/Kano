@@ -37,8 +37,8 @@
    <div class="row center-right">
      <input type="submit" value="Login" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">
    </div>
- </div>
- </form>
+  </div>
+  </form>
 
  <div class="row center-left">
  <h3 class="header left htwg-darkblue-text">Registrierung</h3>
