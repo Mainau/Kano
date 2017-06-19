@@ -13,15 +13,18 @@ class RequirementsController extends Controller
     {
         $surveyid = $survey->id;
 
+
+
         $this->validate(request(), [
 
             'keyword' => 'required',
             'functionalphrase' => 'required',
             'dysfunctionalphrase' => 'required'
+
         ]);
 
         auth()->user()->publish(
-            new Requirement(request([ 'keyword', 'functionalphrase', 'dysfunctionalphrase']))
+            new Requirement(request([ 'keyword', 'functionalphrase', 'dysfunctionalphrase', 'survey_id']))
         );
 
 

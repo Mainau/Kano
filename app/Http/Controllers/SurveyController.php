@@ -7,7 +7,7 @@ use App\Survey;
 
 class SurveyController extends Controller
 {
-    public function store()
+    public function store(Survey $survey)
     {
 
         $this->validate(request(), [
