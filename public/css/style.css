@@ -152,6 +152,25 @@ color: #808080;
   width: 365px;
 }
 
+
+.list{
+  margin-left: 25px;
+  padding-left: 25px;
+}
+
+.listitem {
+margin-left: 50px;
+padding-left: 50px;
+}
+
+.listitemwithoutbulletpoint {
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 25px;
+  padding-left: 25px;
+  list-style-type: none;
+}
+
 /*#header{
   position: relative;
   top: 0;
