@@ -26,7 +26,9 @@ class PagesController extends Controller
 
     public function pruefen(){
 
-        return view('pages.pruefen') ;
+        $requirements = Requirement::where('survey_id', '=', 1)->get();
+
+        return view('pages.pruefen', compact('requirements')) ;
 
     }
 
