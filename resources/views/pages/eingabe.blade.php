@@ -38,35 +38,42 @@
     <div class="schabloneAnzeigen">
       <input type="checkbox" class="hackbox schablone" id="schabloneID">
       <label class="schablone" for="schabloneID">Schablone und Tipps zur Formulierung Ihrer Anforderungen</label>
-      <br><br>
-            <span class="schabloneSpan"><img src="/img/schablone.png" alt="Schablone zur Anforderungsformulierung"/><br></span>
-            <span class="schabloneSpan"><p> Quelle:Johner institut, Nutzungsanforderungen,URL:https://www.johner-institut.de/blog/tag/nutzungsanforderungen/(Stand:18.06.2017)</p></span>
-<br>
-            <span class="schabloneSpan"><h5>Als Hilfestellung zum Formulieren von Nutzungsanforderungen empfehlen wir die Inhalte folgende Webseiten</h5>
-<br>
-            <p>- Allgemeine Übersicht zur Formulierung von Nutzungsanforderungen:</p>
-            <a href="https://www.johner-institut.de/blog/tag/nutzungsanforderungen/">Johner Institut: Nutzungsanforderungen</a>
-            <br>
-            <a href="https://www.johner-institut.de/blog/category/iec-62366-usability/">Johner Institut: IEC 62366</a>
-            <br>
-            <a href="http://www.dakks.de/sites/default/files/71_sd_2_007_leitfaden_usability_1.3_0.pdf">dakks: Usability Leitfaden</a>
-            <br>
-            <p>- Informationen und Hilfestellungen zum Usability-Engineering:<p>
-            <a href="http://www.procontext.de/aktuelles/2012/06/nutzungskontext-erfordernisse-anforderungen-und-loesung-das-arbeitsmodell-des-usability-engineering.html">Procontext: Arbeitsmodell-Usability-Enginnering</a>
-            <br>
-            <a href="http://www.procontext.de/aktuelles/2011/09/begriffe-im-usability-engineering-und-requirements-engineering.html">Procontext: wichtige Begriffe im Usability-Engenieering</a>
-            <br>
-            <a href="http://www.procontext.de/aktuelles/2014/02/nutzungsanforderungen-von-anderen-stakeholder-anforderungen-unterscheiden.html">Procontext: Nutzungsanforderungen und Anforderungen</a>
-            <br>
-            <a href="http://www.procontext.de/aktuelles/2010/06/das-neue-common-industry-format-for-usabilityrelated-information-cif.html">Procontext: Usability-Prozess</a>
-            <br>
-            <a href="http://www.procontext.de/aktuelles/2010/02/was-ist-usability-wirklich.html">Procontext: Usability-Engineering</a>
-            <br>
-            <a href="http://www.procontext.de/aktuelles/2006/08/die-neue-din-en-iso-9241-110.html">Procontext: Usability-Normung</a></span>
-            
+<br><br>
+      <span class="schabloneSpan"><h5>Schablone zur Formulierung von Nutzeranforderungen</h5></span>
+                  <br>
+                  <span class="schabloneSpan"><ul>Nutzen Sie die folgende Schablone zur Formulierung ihrer Nutzeranforderungen um die kognitiven Leistungen die ein Nutzer am System XY erbringen kann darzustellen:</ul></span>
+                  <br>
+                  <span class="schabloneSpan"><li class=listitemwithoutbulletpoint> Der Benutzer muss am System etwas „eingeben“, „auswählen“ oder „verstehen“ können.</li></span>
+                  <br>
+                  <span class="schabloneSpan"><p> Quelle: Vgl. Johner institut, Nutzungsanforderungen, URL:https://www.johner-institut.de/blog/tag/nutzungsanforderungen/(Stand:18.06.2017)</p></span>
+      <br>
+                  <span class="schabloneSpan"><h5>Tipps zu Nutzungsanforderungen und zum Usability- und Requirement Engineering</h5>
+                  <br>
+                  <p>Als weitere Hilfestellung zur Formulierung von Nutzungsanforderungen und zum Usability- und Requirement Engineering empfehlen wir die Inhalte folgender Webseiten:</p>
+                  <ul class="list">- Allgemeine Informationen zu Nutzungsanforderungen:</ul>
+                  <li class=listitem> <a href="https://www.johner-institut.de/blog/tag/nutzungsanforderungen/">Johner Institut: Nutzungsanforderungen</li>
+                  <br>
+                  <li class=listitem> <a href="https://www.johner-institut.de/blog/category/iec-62366-usability/">Johner Institut: IEC 62366</a></li></ul>
+                  <br>
+                  <ul class="list">- Informationen zum Usability- und Requirement Engineering:</ul>
+                  <li class=listitem> <a href="http://www.procontext.de/aktuelles/2012/06/nutzungskontext-erfordernisse-anforderungen-und-loesung-das-arbeitsmodell-des-usability-engineering.html">Procontext: Arbeitsmodell-Usability-Enginnering</a></li>
+                  <br>
+                  <li class=listitem> <a href="http://www.procontext.de/aktuelles/2011/09/begriffe-im-usability-engineering-und-requirements-engineering.html">Procontext: wichtige Begriffe im Usability-Engenieering</a></li>
+                  <br>
+                <li class=listitem> <a href="http://www.procontext.de/aktuelles/2014/02/nutzungsanforderungen-von-anderen-stakeholder-anforderungen-unterscheiden.html">Procontext: Nutzungsanforderungen und Anforderungen</a></li>
+                  <br>
+                <li class=listitem> <a href="http://www.procontext.de/aktuelles/2010/06/das-neue-common-industry-format-for-usabilityrelated-information-cif.html">Procontext: Usability-Prozess</a></li>
+                  <br>
+                <li class=listitem> <a href="http://www.procontext.de/aktuelles/2010/02/was-ist-usability-wirklich.html">Procontext: Usability-Engineering</a></li>
+                  <br>
+                <li class=listitem> <a href="http://www.procontext.de/aktuelles/2006/08/die-neue-din-en-iso-9241-110.html">Procontext: Usability-Normung</a></li>
+                <br>
+                <li class=listitem> <a href="http://www.dakks.de/sites/default/files/71_sd_2_007_leitfaden_usability_1.3_0.pdf">dakks: Usability Leitfaden</a></li></span>
 
-      <br><br>
-    </div>
+
+
+            <br><br>
+          </div>
 
     <form method="POST" action="/createrequirement/{{$survey->id}}">
         {{csrf_field()}}
