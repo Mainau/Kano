@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Survey;
+use App\Reply;
+use Auth;
 
 class ReplyController extends Controller
 {
@@ -17,20 +20,28 @@ class ReplyController extends Controller
         // remove the token
         $arr = $request->except('_token');
         foreach ($arr as $key => $value) {
-            $newAnswer = new Answer();
+            $newReply = new Reply();
             if (! is_array( $value )) {
-                $newValue = $value['answer'];
+                $newFuncValue = $value['func_answer'];
+                $newImpValue = $value['imp_answer'];
+                $newDysValue = $value['dys_answer'];
+
             } else {
-                $newValue = json_encode($value['answer']);
+                $newFuncValue = json_encode($value['func_answer']);
+                $newImpValue = json_encode($value['imp_answer']);
+                $newDysValue = json_encode($value['dys_answer']);
+
             }
-            $newAnswer->answer = $newValue;
-            $newAnswer->question_id = $key;
-            $newAnswer->user_id = Auth::id();
-            $newAnswer->survey_id = $survey->id;
+            $newReply->functionalscore = $newFuncValue;
+            $newReply->importance = $newImpValue;
+            $newReply->dysfunctionalscore = $newDysValue;
+            $newReply->requirement_id = $key;
+            $newReply->user_id = Auth::id();
+            $newReply->survey_id = $survey->id;
 
-            $newAnswer->save();
+            $newReply->save();
 
-            $answerArray[] = $newAnswer;
+            $replyArray[] = $newReply;
         };
 
         return view ('pages.startseite');
