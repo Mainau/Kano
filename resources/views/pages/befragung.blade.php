@@ -40,6 +40,7 @@
 
 
         {!! Form::open(array('action'=>array('ReplyController@store', $survey->id))) !!}
+
         @foreach ($survey->requirements as $requirement)
             @include ('layouts.requirement')
         @endforeach

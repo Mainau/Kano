@@ -1,25 +1,41 @@
 @extends('layout')
 
 @section('content')
-  <h4>{{ $survey->name }}</h4>
-  <table class="bordered striped">
-    <thead>
-    <tr>
-      <th data-field="id">Question</th>
-      <th data-field="name">Answer(s)</th>
-    </tr>
-    </thead>
+<style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
+  th, td {
+  padding: 5px;
+  }
+</style>
 
-    <tbody>
+  <h3>{{ $survey->name }}</h3>
+
     @forelse ($survey->requirements as $item)
-      <tr>
-        <td>{{ $item->keyword }}</td>
+
+        <h5>{{ $item->keyword }}</h5>
+        <table style="width:100%">
+          <tr>
+            <th>User</th>
+            <th>Funktional</th>
+            <th>Disfunktional</th>
+            <th>Wichtigkeit</th>
+          </tr>
         @foreach ($item->replies as $reply)
-          <td>{{ $reply->funcitonalscore }} <br/></td>
-          <td>{{ $reply->dysfunctionalscore }} <br/></td>
-          <td>{{ $reply->importance }} <br/></td>
-        @endforeach
-      </tr>
+          @if($reply->survey_id == $survey->id)
+
+            <tr>
+            <td>{{ $reply->user_id }}</td>
+            <td>{{ $reply->functionalscore }}</td>
+          <td>{{ $reply->dysfunctionalscore }}</td>
+          <td>{{ $reply->importance }}</td>
+            </tr>
+            @endif
+            @endforeach
+        </table>
+
     @empty
       <tr>
         <td>
@@ -28,6 +44,6 @@
         <td></td>
       </tr>
     @endforelse
-    </tbody>
-  </table>
+
+<br>
 @endsection
