@@ -34,7 +34,7 @@
       <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/>-->
 
       @if (Auth::check())
-          <a href="logout">logout</a>
+          <a href="/logout">logout</a>
       @endif
     </div>
 
