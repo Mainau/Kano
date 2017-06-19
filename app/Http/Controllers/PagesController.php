@@ -109,7 +109,9 @@ class PagesController extends Controller
 
     public function befragung(Survey $survey){
 
+
         $requirements = Requirement::where('survey_id', '=', $survey->id)->get();
       return view ('pages.befragung', compact('survey'), compact('requirements'));
+
     }
 }
