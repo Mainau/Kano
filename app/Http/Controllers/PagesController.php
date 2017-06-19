@@ -9,7 +9,7 @@ use App\Requirement;
 use App\SurveyParticipant;
 use Illuminate\Mail\Mailer;
 use App\Mail\SurveyInvitation;
-
+use Auth;
 
 class PagesController extends Controller
 {
@@ -74,6 +74,16 @@ class PagesController extends Controller
     public function anmeldung(){
 
       return view ('pages.anmeldung');
+
+    }
+
+    public function umfrageliste(){
+
+        $me = Auth::user();
+
+        $surveys = Survey::where('owner_id', '=', $me->id)->get();
+
+        return view ('pages.surveyoverview', compact('surveys'));
 
     }
 

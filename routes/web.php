@@ -51,6 +51,8 @@ Route::post('/befragung/{survey}/abgeschlossen', 'ReplyController@store');
 
 Route::get('/befragung/{survey}/uebersicht', 'PagesController@uebersicht');
 
+Route::get('/umfrageliste', 'PagesController@umfrageliste');
+
 
 Route:: get('/kontakt', 'PagesController@kontakt');
 
