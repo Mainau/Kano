@@ -7,21 +7,19 @@
     <tr>
         <td>
             <p> Bitte bewerten Sie die Anforderungen</p>
-            <form action="">
-                <input type="radio" name="rating" id="Das würde mir sehr helfen"> Das würde mir sehr helfen </input><br/>
-                <input type="radio" name="rating" id="Das ist eine grundlegende Anforderung für mich"> Das ist eine grundlegende Anforderung für mich </input><br/>
-                <input type="radio" name="rating" id="Das würde mich nicht betreffen"> Das würde mich nicht betreffen </input><br/>
-                <input type="radio" name="rating" id="Das wäre eine geringe Unanehmlichkeit für mich"> Das wäre eine geringe Unannehmlichkeit für mich </input><br/>
-                <input type="radio" name="rating" id="Das wäre ein großes Problem für mich"> Das wäre ein großes Problem für mich </input><br/>
-            </form>
+                <input type="radio" name="{{ $requirement->id }}[func_answer]" id="helpful"> Das würde mir sehr helfen </input><br/>
+                <input type="radio" name="{{ $requirement->id }}[func_answer]" id="basic"> Das ist eine grundlegende Anforderung für mich </input><br/>
+                <input type="radio" name="{{ $requirement->id }}[func_answer]" id="irrelevant"> Das würde mich nicht betreffen </input><br/>
+                <input type="radio" name="{{ $requirement->id }}[func_answer]" id="annoying"> Das wäre eine geringe Unannehmlichkeit für mich </input><br/>
+                <input type="radio" name="{{ $requirement->id }}[func_answer]" id="problematic"> Das wäre ein großes Problem für mich </input><br/>
         </td>
         <td>
             <p> Wie wichtig ist diese Anforderung für Sie?</p>
-            <input type="radio" name="importance" id="Überaus wichtig"> Überaus wichtig </input><br/>
-            <input type="radio" name="importance" id="sehr wichtig"> Sehr wichtig </input><br/>
-            <input type="radio" name="importance" id="wichtig"> Wichtig </input><br/>
-            <input type="radio" name="importance" id="Ein wenig wichtig"> Ein wenig wichtig </input><br/>
-            <input type="radio" name="importance" id="Überhaupt nicht wichtig"> Überhaupt nicht wichtig </input>
+            <input type="radio" name="{{ $requirement->id }}[imp_answer]" id="extremely_important"> Überaus wichtig </input><br/>
+            <input type="radio" name="{{ $requirement->id }}[imp_answer]" id="very_important"> Sehr wichtig </input><br/>
+            <input type="radio" name="{{ $requirement->id }}[imp_answer]" id="important"> Wichtig </input><br/>
+            <input type="radio" name="{{ $requirement->id }}[imp_answer]" id="less_important"> Ein wenig wichtig </input><br/>
+            <input type="radio" name="{{ $requirement->id }}[imp_answer]" id="not_important"> Überhaupt nicht wichtig </input>
         </td>
     </tr>
 </table>
@@ -37,13 +35,11 @@
     <tr>
         <td>
             <p> Bitte bewerten Sie die Anforderungen</p>
-            <form action="">
-                <input type="radio" name="rating" id="Das würde mir sehr helfen"> Das würde mir sehr helfen </input><br/>
-                <input type="radio" name="rating" id="Das ist eine grundlegende Anforderung für mich"> Das ist eine grundlegende Anforderung für mich </input><br/>
-                <input type="radio" name="rating" id="Das würde mich nicht betreffen"> Das würde mich nicht betreffen </input><br/>
-                <input type="radio" name="rating" id="Das wäre eine geringe Unanehmlichkeit für mich"> Das wäre eine geringe Unannehmlichkeit für mich </input><br/>
-                <input type="radio" name="rating" id="Das wäre ein großes Problem für mich"> Das wäre ein großes Problem für mich </input><br/>
-            </form>
+                <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="helpful"> Das würde mir sehr helfen </input><br/>
+                <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="basic"> Das ist eine grundlegende Anforderung für mich </input><br/>
+                <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="irrelevant"> Das würde mich nicht betreffen </input><br/>
+                <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="annoying"> Das wäre eine geringe Unannehmlichkeit für mich </input><br/>
+                <input type="radio" name="{{ $requirement->id }}[dys_answer]" id="problematic"> Das wäre ein großes Problem für mich </input><br/>
         </td>
     </tr>
 </table>

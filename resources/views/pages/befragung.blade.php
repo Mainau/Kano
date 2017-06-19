@@ -43,7 +43,7 @@
         @foreach ($survey->requirements as $requirement)
             @include ('layouts.requirement')
         @endforeach
-        
+
 
 
       <br></br>
