@@ -48,6 +48,9 @@
     {{csrf_field()}}
 
 <div>
+  <label>
+  <input type="text" class="form-control" id="name" name="name" placeholder="Vor- und Nachname eingeben..." required>
+  </label>
 <label>
 <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail-Adresse eingeben..." required>
 </label>
