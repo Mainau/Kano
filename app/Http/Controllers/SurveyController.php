@@ -21,6 +21,6 @@ class SurveyController extends Controller
         );
 
 
-        return redirect('/eingabe');
+        return redirect('/eingabe/' . $survey->id );
     }
 }

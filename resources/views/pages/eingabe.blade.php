@@ -68,7 +68,7 @@
       <br><br>
     </div>
 
-    <form method="POST" action="/createrequirement">
+    <form method="POST" action="/createrequirement/{{$survey->id}}">
         {{csrf_field()}}
 
     <div class="row center-left">

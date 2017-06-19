@@ -13,9 +13,9 @@
 
 Route::get('/', 'PagesController@home')->name('home');
 
-Route::get('/eingabe','PagesController@eingabe');
+Route::get('/eingabe/{survey}','PagesController@eingabe');
 
-Route::get('/pruefen','PagesController@pruefen');
+Route::get('/pruefen/{survey}','PagesController@pruefen');
 
 Route::get('/freigeben','PagesController@freigeben');
 Route::post('/freigeben', 'PagesController@sendEmails');
@@ -44,7 +44,7 @@ Route::post('/login', 'Auth\LoginController@store');
 
 Route::get('/logout', 'Auth\LoginController@destroy');
 
-Route::post('/createrequirement', 'RequirementsController@store');
+Route::post('/createrequirement/{survey}', 'RequirementsController@store');
 
 
 Route::post('/befragung/{survey}/abgeschlossen', 'ReplyController@store');

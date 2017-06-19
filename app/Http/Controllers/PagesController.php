@@ -32,17 +32,19 @@ class PagesController extends Controller
 
     }
 
-    public function eingabe(){
+    public function eingabe(Survey $survey){
 
-        return view('pages.eingabe') ;
+        return view('pages.eingabe', compact('survey')) ;
+
+
 
     }
 
-    public function pruefen(){
+    public function pruefen(Survey $survey){
 
         $requirements = Requirement::where('survey_id', '=', 1)->get();
 
-        return view('pages.pruefen', compact('requirements')) ;
+        return view('pages.pruefen', compact('requirements'), compact('survey')) ;
 
     }
 
