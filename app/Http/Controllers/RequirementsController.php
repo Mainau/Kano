@@ -24,7 +24,7 @@ class RequirementsController extends Controller
         ]);
 
         auth()->user()->publish(
-            new Requirement(request([ 'keyword', 'functionalphrase', 'dysfunctionalphrase', 'survey_id']))
+            new Requirement(request([ 'keyword', 'functionalphrase', 'dysfunctionalphrase']))
         );
 
 
