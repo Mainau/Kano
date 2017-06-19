@@ -50,7 +50,7 @@
 <h5>Externe Links</h5>
 <li>Die Verantwortung und Haftbarkeit der Inhalte beim Verweis auf externe Anbieter liegt bei dem jeweiligen Betreiber / Verfasser.</li>
 <br>
-<h5>DATENSCHUTZERKL&Auml;RUNG</h5>
+<h5>Datenschutzerklärung</h5>
 <p>Alle eingegeben Daten die zur Nutzung von KANO erforderlich sind, werden nicht an Dritte weitergegeben.</p>
 
 

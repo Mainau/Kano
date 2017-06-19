@@ -69,7 +69,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center htwg-green-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Klare Übersicht der Ergebnisse</h5>
+            <h5 class="center">Klare Übersicht der Ergebnisse ihrer Umfrage</h5>
 
             <p class="light">KANO informiert Sie über den Abschluss aller ihrer Befragungen. Sie erhalten darauf automatisch die Auswertung Ihrer Umfrage. Die Ergebnisse können Sie direkt exportieren oder jederzeit online abrufen.</p>
           </div>

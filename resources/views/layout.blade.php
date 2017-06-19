@@ -15,7 +15,9 @@
 
 
 @yield('content')
-<!--<header class="page-header htwg-darkblue" id ="header">-->
+
+
+
   <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
@@ -27,14 +29,14 @@
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
+
     <div class="nav-wrapper container">
       <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/>-->
+
       @if (Auth::check())
           <a href="logout">logout</a>
       @endif
     </div>
-
-
 
 
   <footer class="page-footer htwg-darkblue" id="footer">

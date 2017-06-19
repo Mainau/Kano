@@ -95,6 +95,10 @@ input.schablone:checked ~ span.schabloneSpan {
 input.schablone:checked ~ label.schablone::before {
   color:#0091D2;
 }
+img.schabloneImage {
+  width: 100%;
+  height: auto;
+}
 
 #add-button{
   color: #FFFFFF;
@@ -148,9 +152,18 @@ color: #808080;
   width: 365px;
 }
 
+/*#header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: auto;
+}*/
+
 /*#footer{
   position: relative;
   bottom: 0;
   width: 100%;
   height: auto;
 }*/
+
+/**
