@@ -110,7 +110,7 @@
 
          </form>
          <div class="row center-right">
-           <a href="pruefen" type="submit" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Übersicht</a>
+           <a href="/pruefen/{{$survey->id}}" type="submit" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Übersicht</a>
          </div>
     </div>
 
