@@ -18,6 +18,18 @@ class PagesController extends Controller
 
     }
 
+    public function kontakt(){
+
+        return view('pages.kontakt') ;
+
+    }
+
+    public function impressum(){
+
+        return view('pages.impressum') ;
+
+    }
+
     public function eingabe(){
 
         return view('pages.eingabe') ;
@@ -56,7 +68,7 @@ class PagesController extends Controller
 
     }
 
-  
+
     public function anmeldung(){
 
       return view ('pages.anmeldung');

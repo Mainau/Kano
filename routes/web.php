@@ -48,3 +48,9 @@ Route::post('/createrequirement', 'RequirementsController@store');
 
 
 Route::post('/befragung/{survey}/abgeschlossen', 'ReplyController@store');
+
+Route:: get('/kontakt', 'PagesController@kontakt');
+
+Route:: get('/impressum', 'PagesController@impressum');
+
+Route:: get('/home', 'PagesController@home');
