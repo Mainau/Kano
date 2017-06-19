@@ -31,7 +31,7 @@
       </div>
       <div class="row center">
           @if (Auth::check())
-          <a href="eingabe" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Beginnen</a>
+          <a href="umfrageliste" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Beginnen</a>
           @else
           <a href="anmeldung" id="beginn-button" class="btn-large waves-effect htwg-darkblue">Anmelden</a>
           @endif

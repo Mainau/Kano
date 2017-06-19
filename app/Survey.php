@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Survey extends Model
 {
+
+    protected $fillable = ['name', 'beschreibung', 'user_id'];
+
+
     public function requirements()
     {
         return $this->hasMany(Requirement::class);
