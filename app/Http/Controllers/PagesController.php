@@ -81,7 +81,7 @@ class PagesController extends Controller
 
         $me = Auth::user();
 
-        $surveys = Survey::where('owner_id', '=', $me->id)->get();
+        $surveys = Survey::where('user_id', '=', $me->id)->get();
 
         return view ('pages.surveyoverview', compact('surveys'));
 

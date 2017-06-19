@@ -32,8 +32,19 @@ class User extends Authenticatable
         return $this->hasMany(Requirement::class);
     }
 
+    public function surveys()
+    {
+        return $this->hasMany(Survey::class);
+    }
+
+
     public function publish(Requirement $requirement)
     {
         $this->requirements()->save($requirement);
+    }
+
+    public function publish_survey(Survey $survey)
+    {
+        $this->surveys()->save($survey);
     }
 }

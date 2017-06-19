@@ -27,7 +27,7 @@
     </div>
 
 
-    <form method="POST" action="/createrequirement">
+    <form method="POST" action="/createsurvey">
         {{csrf_field()}}
 
     <div class="row center-left">
@@ -37,7 +37,7 @@
 
       <h7 class="header col s12 light">Name der Umfrage</h7>
    <label type="text">
-     <input id="stichwort" name="keyword" placeholder="Name eingeben...">
+     <input id="name" name="name" placeholder="Name eingeben...">
    </label>
  </div>
 
@@ -46,7 +46,7 @@
       </div>
       <div>
      <label type="text">
-       <input id="funktional" name="functionalphrase" placeholder="Beschreibung eingeben...">
+       <input id="beschreibung" name="beschreibung" placeholder="Beschreibung eingeben...">
      </label>
    </div>
 
