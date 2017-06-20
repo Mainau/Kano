@@ -82,9 +82,9 @@
             <div class="col l3 s12 right">
             <h5 class="white-text">KANO</h5>
               <ul>
-                <li><a class="white-text" href="home">Home</a></li>
-                <li><a class="white-text" href="kontakt">Kontakt</a></li>
-                <li><a class="white-text" href="impressum">Impressum</a></li>
+                <li><a class="white-text" href="/home">Home</a></li>
+                <li><a class="white-text" href="/kontakt">Kontakt</a></li>
+                <li><a class="white-text" href="/impressum">Impressum</a></li>
                 <!--<li><a class="white-text" href="#!">FAQ</a></li>
               </ul>-->
           </div>
