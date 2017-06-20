@@ -32,8 +32,11 @@
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
+    
+<div>
       <h1 class="header center htwg-darkblue-text">Kano-Umfrage</h1>
+        <img src="/img/kanosmall.png" alt="logo" class=kanologo>
+      </div>
       <div class="row center">
         <h5 class="header col s12 light">Tool zur Anforderungserhebung und Priorisierung nach Kano</h5>
       </div>
