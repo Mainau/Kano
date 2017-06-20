@@ -2,7 +2,6 @@
 
 @section('content')
 
-
   <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
@@ -18,16 +17,26 @@
           <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/> -->
     </div>
   </nav>
+  <style type="text/css">
+    #angemeldetAls{
+      visibility: hidden;
+    }
+    #logoutheader{
+      visibility: hidden;
+    }
+    #footer{
+      position: absolute !important;
+      bottom: 0 !important;
+    }
+  </style>
   <div class="section no-pad-bot" id="index-banner">
 
-
-        <br></br>
-              <br></br>
-      <h5 style="text-align:center">Vielen Dank für die Beantwortung der Fragen </h5>
+      <h3 style="text-align:center" id="vielenDank">Vielen Dank für die Beantwortung der Fragen! </h3>
       <br></br>
         <br></br>
               <br></br>
 
     </div>
   </div>
-</body>
+
+<!-- </body> -->

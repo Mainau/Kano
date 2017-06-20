@@ -27,6 +27,10 @@
     #logoutheader{
       visibility: hidden;
     }
+    #footer{
+      position: absolute;
+      bottom: 0;
+    }
   </style>
 
 <style>
