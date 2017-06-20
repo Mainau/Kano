@@ -203,6 +203,8 @@ header{
   /*margin-left: 80;*/
   padding-left: 900;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #navi{
