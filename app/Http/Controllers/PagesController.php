@@ -114,7 +114,7 @@ class PagesController extends Controller
       //   //->select('surveys.id')
       //   ->latest('surveys.created_at')->first()->id;
 
-
+//funktioniert
        $request=request();
        $surveyID=$request->surveyID;
 
