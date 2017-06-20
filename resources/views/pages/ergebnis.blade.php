@@ -38,7 +38,7 @@
 
 <div class="row center-right">
 <div class="row right" id="ergebnisTabelle">
-  <table >
+  <table class="bordered">
           <tr>
            <th><b>Anforderung</b></th>
            <th><b>Kategorie</b></th>
