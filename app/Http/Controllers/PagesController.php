@@ -125,8 +125,9 @@ class PagesController extends Controller
         $surveyParticipant->user_email = $emails[$i];
         $surveyParticipant->save();
         $mailer->to($emails[$i])->send(new SurveyInvitation(auth()->user()->name, $surveyID));
-          return redirect()->back()->withErrors(['/befragung/'.$surveyID]);
+
       }
+        return redirect()->back()->withErrors(['/befragung/'.$surveyID]);
     }else{
       return redirect()->back();
         //  return redirect()->back()->withErrors(['error']);
