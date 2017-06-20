@@ -17,7 +17,7 @@
     </div> -->
     <div class="nav-wrapper container">
 
-      <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/> -->
+      <!-- <img src="KANO-LOGO.jpg"  width="80px" height="80px"/>  -->
 
     </div>
   </nav>
@@ -35,7 +35,7 @@
 
 <div>
       <h1 class="header center htwg-darkblue-text">Kano-Umfrage</h1>
-        <!-- <img src="/img/kanosmall.png" alt="logo" class="kanologo"> -->
+        <img src="/img/kanosmall.png" alt="logo" class="kanologo"> 
       </div>
       <div class="row center">
         <h5 class="header col s12 light">Tool zur Anforderungserhebung und Priorisierung nach Kano</h5>

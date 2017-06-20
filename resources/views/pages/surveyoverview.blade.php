@@ -57,7 +57,7 @@
 
          </form>
 
-        <h5>Ältere Umfragen</h5>
+        <h5>Erstellte Umfragen</h5>
         <br>
 
         @foreach ($surveys as $survey)
