@@ -61,7 +61,7 @@
           </div>
     <div class="buttons" >
     <div class="row center-right">
-      <a href="pruefen" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>
+      <a href="../pruefen/{{$survey->id}}" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>
     </div>
     <div class="row center-right">
       <a href="../befragung/{{$survey->id}}/uebersicht" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
