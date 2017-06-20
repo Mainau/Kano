@@ -15,6 +15,10 @@
 <header class="htwg-darkblue" id="header" >
 <div id="navi">
 <nav class="htwg-darkblue" role="navigation">
+  <div id="angemeldetAls">   @if (Auth::check())
+    <h7> Eingeloggt_als_{{Auth::user()->email}}</h7>
+    @endif
+  </div>
   <div class="nav-wrapper container" id="logoutDiv">
 
                   @if (Auth::check())
@@ -34,10 +38,7 @@
   <!-- </div> -->
 </nav>
 </div>
-<div id="angemeldetAls">   @if (Auth::check())
-  <h7  > Eingeloggt als {{Auth::user()->email}}</h7>
-  @endif
-</div>
+
 
 </header>
 
