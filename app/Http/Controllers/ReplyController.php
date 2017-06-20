@@ -12,7 +12,7 @@ class ReplyController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+      //  $this->middleware('auth');
     }
 
     public function store(Request $request, Survey $survey)
@@ -39,7 +39,7 @@ class ReplyController extends Controller
             $newReply->importance = $newImpValue;
             $newReply->dysfunctionalscore = $newDysValue;
             $newReply->requirement_id = $key;
-            $newReply->user_id = Auth::id();
+            //$newReply->user_id = Auth::id();
             $newReply->survey_id = $survey->id;
 
             $newReply->save();

@@ -15,7 +15,7 @@ class CreateReplysTable extends Migration
     {
         Schema::create('reply', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');//ja ist nötig
+          //  $table->integer('user_id');//ja ist nötig
             $table->integer('survey_id');
             $table->integer('requirement_id');
             $table->string('functionalscore');
