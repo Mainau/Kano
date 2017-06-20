@@ -22,7 +22,7 @@
   <div class="nav-wrapper container" id="logoutDiv">
 
                   @if (Auth::check())
-                      <a id="logoutheader" class="row center" href="../logout">Logout</a>
+                      <a id="logoutheader" class="row center" href="/logout">Logout</a>
                   @endif
 </div>
 
