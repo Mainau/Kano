@@ -212,6 +212,14 @@ header{
   top: 0;
 }
 
+.kanologo{
+position:static;
+margin-top: 0%;
+margin-right: 45%;
+margin-left: 45%;
+
+
+}
 /*#footer{
   position: relative;
   bottom: 0;
