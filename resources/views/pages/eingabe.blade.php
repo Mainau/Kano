@@ -72,7 +72,7 @@
 
 
 
-            <br><br>
+
           </div>
 
     <form method="POST" action="/createrequirement/{{$survey->id}}">
