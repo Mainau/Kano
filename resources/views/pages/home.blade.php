@@ -3,25 +3,33 @@
 
 @section('content')
 
+
   <nav class="htwg-darkblue" role="navigation">
     <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Kano</a></li> -->
+        <li><a href="#">Kano</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
+    </div> -->
     <div class="nav-wrapper container">
-      <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/>-->
-      @if (Auth::check())
-          <a href="logout">logout</a>
-      @endif
-    </div>
 
+      <!--  <img src="KANO-LOGO.jpg"  width="80px" height="80px"/> -->
+
+    </div>
   </nav>
+<style type="text/css">
+  #angemeldetAls{
+    visibility: hidden;
+  }
+  #logoutheader{
+    visibility: hidden;
+  }
+</style>
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -69,7 +77,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center htwg-green-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Klare Übersicht der Ergebnisse ihrer Umfrage</h5>
+            <h5 class="center">Klare Übersicht der Ergebnisse</h5>
 
             <p class="light">KANO informiert Sie über den Abschluss aller ihrer Befragungen. Sie erhalten darauf automatisch die Auswertung Ihrer Umfrage. Die Ergebnisse können Sie direkt exportieren oder jederzeit online abrufen.</p>
           </div>
