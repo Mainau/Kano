@@ -21,19 +21,7 @@
   <div class="section no-pad-bot" id="index-banner">
 
     <div class="container">
-      <div>
-        <table id="fortschritt">
-              <tr>
-                <th style="background-color: #009b91; color:#FFFFFF"></th>
-                <th></th>
-                  <th></th>
-                  <th></th>
-                    <th></th>
 
-             </tr>
-           </table>
-          <br>
-        </div>
       <h5 style="text-align:left">Fragestellung zur Anforderungserhebung </h5>
 
        Name der Kano Umfrage: {{ $survey->name}}
