@@ -47,7 +47,7 @@ class ReplyController extends Controller
             $replyArray[] = $newReply;
         };
 
-        return redirect('/befragung/' . $survey->id . '/uebersicht');
-
+        //return redirect('/befragung/' . $survey->id . '/uebersicht');
+        return redirect('/fertig');
     }
 }

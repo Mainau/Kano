@@ -20,15 +20,7 @@
   </nav>
   <div class="section no-pad-bot" id="index-banner">
 
-    <div class="container">
-      <div>
-        <table id="fortschritt">
-              <tr>
-                <td style="background-color: #009b91; color:#FFFFFF"></td>
-             </tr>
-           </table>
-          <br>
-        </div>
+
         <br></br>
               <br></br>
       <h5 style="text-align:center">Vielen Dank für die Beantwortung der Fragen </h5>
