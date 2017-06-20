@@ -46,6 +46,7 @@
   <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
 <div id= 'errorMes' name='errorMes' style="visibility:hidden; color:red;">Keine Email!</div>
  <input type='hidden' id= 'hiddenField' name='id' value='' />
+  <input type='hidden' id= 'surveyID' name='surveyID' value='{{$survey->id}}' />
 @if($errors->any())
 <h6>Der versendete Link:</h6>
 <a href="{{$errors->first()}}">127.0.0.1:8000{{$errors->first()}}</a>

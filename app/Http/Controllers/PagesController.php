@@ -50,9 +50,9 @@ class PagesController extends Controller
 
     }
 
-    public function freigeben(){
+    public function freigeben(Survey $survey){
 
-        return view('pages.freigeben') ;
+        return view('pages.freigeben', compact('survey')) ;
 
     }
 
@@ -105,18 +105,19 @@ class PagesController extends Controller
     //angelegten Emailfach empfangen. Um auch bei euch diesen Dienst nutzen zu können, müsst
     //ihr einen entsprechenden Account anlegen und die Login-Daten in der .env hinterlegen
     public function sendEmails(Request $request, Mailer $mailer){
-      $id = Auth::user()->id;
-      $surveyID=DB::table('users')
-        ->join('surveys', function ($join) use($id){
-            $join->on('users.id', '=', 'surveys.user_id')
-                 ->where('surveys.user_id', '=',$id );
-        })
-        //->select('surveys.id')
-        ->latest('surveys.created_at')->first()->id;
+      // $id = Auth::user()->id;
+      // $surveyID=DB::table('users')
+      //   ->join('surveys', function ($join) use($id){
+      //       $join->on('users.id', '=', 'surveys.user_id')
+      //            ->where('surveys.user_id', '=',$id );
+      //   })
+      //   //->select('surveys.id')
+      //   ->latest('surveys.created_at')->first()->id;
 
 
        $request=request();
-      
+       $surveyID=$request->surveyID;
+
     if($request->id!=null){
       $emails=explode(',',$request->input('id'));
       for($i=0;$i<sizeOf($emails); $i++){

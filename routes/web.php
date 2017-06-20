@@ -17,7 +17,7 @@ Route::get('/eingabe/{survey}','PagesController@eingabe');
 
 Route::get('/pruefen/{survey}','PagesController@pruefen');
 
-Route::get('/freigeben','PagesController@freigeben');
+Route::get('/freigeben/{survey}','PagesController@freigeben');
 Route::post('/freigeben', 'PagesController@sendEmails');
 
 Route::get('/befragung/{survey}', 'PagesController@befragung');
