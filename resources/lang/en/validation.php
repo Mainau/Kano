@@ -101,6 +101,15 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'func_answer' => [
+            'required' => 'Bitte bewerten Sie alle funktionalen Anforderungen',
+        ],
+        'imp_answer' => [
+            'required' => 'Bitte bewerten Sie alle disfunktionalen Anforderungen',
+        ],
+        'dys_answer' => [
+            'required' => 'Bitte bewerten Sie jeweils wie wichtig die Anforderungen sind',
+        ],
     ],
 
     /*

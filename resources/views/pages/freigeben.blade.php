@@ -41,21 +41,30 @@
       <form class="mailAdressen" id="mailAdressen" method="POST" action="/freigeben">
         {{csrf_field()}}
         <div class="row center-left">
-          <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Mailadressen ein:</h7>
+          <h7 class="header col s12 light">Bitte geben Sie hier die entsprechenden Emailadressen ein:</h7>
         </div>
   <div class="chips chips-initial" data-index="0" data-initialized="true"><div class="chip">apple<i class="material-icons close">close</i></div><input id="8b5569af-5975-18f7-cff5-94a3cd46377f" class="input" placeholder=""></div>
-<div id="errorMes"style="color:Red;visibility:hidden">Keine Email</div>
+<div id= 'errorMes' name='errorMes' style="visibility:hidden; color:red;">Keine Email!</div>
+ <input type='hidden' id= 'hiddenField' name='id' value='' />
+  <input type='hidden' id= 'surveyID' name='surveyID' value='{{$survey->id}}' />
+@if($errors->any())
+<h6>Der versendete Link:</h6>
+<a href="{{$errors->first()}}">127.0.0.1:8000{{$errors->first()}}</a>
+@endif
+
+
+
             <br><br>
-             <input type='hidden' id= 'hiddenField' name='id' value='' />
+
           <div class="row center-right">
             <button onClick="sendEmails()" id="freigeben-button" class="btn-large waves-effect right htwg-darkblue" style="display: flex;  flex-direction: column; justify-content: center; align-items: center;  height: 50px; width: 180px;">Senden</button>
           </div>
     <div class="buttons" >
     <div class="row center-right">
-      <a href="pruefen" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>
+      <a href="../pruefen/{{$survey->id}}" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Zurück</a>
     </div>
     <div class="row center-right">
-      <a href="ergebnis" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
+      <a href="../befragung/{{$survey->id}}/uebersicht" id="eingabe-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;"  >Weiter</a>
     </div>
 
   </form>
@@ -68,6 +77,7 @@
       <script src="{{asset('js/init.js')}}"></script>
 
       <script>
+
       var emails=[];
       function validateEmail(email) {
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

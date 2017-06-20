@@ -17,6 +17,9 @@ class ReplyController extends Controller
 
     public function store(Request $request, Survey $survey)
     {
+
+
+
         // remove the token
         $arr = $request->except('_token');
         foreach ($arr as $key => $value) {

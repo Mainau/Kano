@@ -38,6 +38,8 @@
 
        Name der Kano Umfrage: {{ $survey->name}}
 
+      @include('layouts.errors')
+
 
         {!! Form::open(array('action'=>array('ReplyController@store', $survey->id))) !!}
 

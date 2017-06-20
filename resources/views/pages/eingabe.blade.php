@@ -81,7 +81,7 @@
     <div class="row center-left">
       <h5>Ihre Anforderung</h5>
       <br>
-      <h7 class="header col s12 light">Bitte benennen Sie hier Ihre Anforderungen (Stichwort)</h7>
+      <h7 class="header col s12 light">Bitte benennen Sie hier Ihre Anforderung (Stichwort)</h7>
    <label type="text">
      <input id="stichwort" name="keyword" placeholder="Stichwort eingeben...">
    </label>
@@ -110,7 +110,7 @@
 
          </form>
          <div class="row center-right">
-           <a href="pruefen" type="submit" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Übersicht</a>
+           <a href="/pruefen/{{$survey->id}}" type="submit" id="uebersicht-button" class="btn-large waves-effect right htwg-darkblue" style="height: 50px; width: 180px;">Zur Übersicht</a>
          </div>
     </div>
 

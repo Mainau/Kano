@@ -171,12 +171,44 @@ padding-left: 50px;
   list-style-type: none;
 }
 
-/*#header{
-  position: relative;
+#footer{
+  position: static;
+  bottom: 0pt;
+  width: 100%;
+  height: auto;
+}
+
+header{
+  position: static;
   top: 0;
   width: 100%;
   height: auto;
-}*/
+  visibility: visible !important;
+}
+
+#logoutheader{
+  position:absolute;
+  top: 0;
+  padding-top: 1%;
+  /*margin-left: 50;*/
+  padding-left:200;
+  color: white;
+}
+
+#angemeldetAls{
+  position: absolute;
+  top: 10;
+  padding-top: 1%;
+  /*width: 500;*/
+  /*margin-left: 80;*/
+  padding-left: 900;
+  color: white;
+}
+
+#navi{
+  position: absolute;
+  top: 0;
+}
 
 /*#footer{
   position: relative;
